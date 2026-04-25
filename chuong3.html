@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 3: Định dạng Đoạn văn</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="page-wrapper">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header"><div class="logo">W</div><h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2></div>
+      <div class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">🏠</span> Trang chủ</a><div class="nav-divider"></div>
+        <a href="chuong1.html"><span class="nav-icon">📘</span> Chương 1<span class="nav-num">01</span></a>
+        <a href="chuong2.html"><span class="nav-icon">✏️</span> Chương 2<span class="nav-num">02</span></a>
+        <a href="chuong3.html" class="active"><span class="nav-icon">📐</span> Chương 3<span class="nav-num">03</span></a>
+        <a href="chuong4.html"><span class="nav-icon">📊</span> Chương 4<span class="nav-num">04</span></a>
+        <a href="chuong5.html"><span class="nav-icon">🖼️</span> Chương 5<span class="nav-num">05</span></a>
+        <a href="chuong6.html"><span class="nav-icon">📄</span> Chương 6<span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Chương 7<span class="nav-num">07</span></a>
+        <a href="chuong8.html"><span class="nav-icon">📨</span> Chương 8<span class="nav-num">08</span></a>
+        <a href="chuong9.html"><span class="nav-icon">⚡</span> Chương 9<span class="nav-num">09</span></a>
+        <a href="chuong10.html"><span class="nav-icon">📋</span> Chương 10<span class="nav-num">10</span></a>
+        <div class="nav-divider"></div><a href="bai-tap.html"><span class="nav-icon">🎯</span> Bài tập</a>
+      </div>
+    </nav>
+    <main class="main-content content">
+      <div class="chapter-header">
+        <div class="ch-num">Chương 03</div>
+        <h1>Định dạng Đoạn văn</h1>
+        <p>Căn lề, thụt lề, khoảng cách dòng, Bullets & Numbering, Tabs và Borders.</p>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">↔️</span> 3.1 Căn lề đoạn văn (Alignment)</h2>
+        <div class="card">
+          <table class="styled-table">
+            <thead><tr><th>Kiểu căn lề</th><th>Phím tắt</th><th>Mô tả</th></tr></thead>
+            <tbody>
+              <tr><td>Align Left (Trái)</td><td><kbd>Ctrl+L</kbd></td><td>Căn văn bản sang trái (mặc định)</td></tr>
+              <tr><td>Center (Giữa)</td><td><kbd>Ctrl+E</kbd></td><td>Căn giữa - dùng cho tiêu đề</td></tr>
+              <tr><td>Align Right (Phải)</td><td><kbd>Ctrl+R</kbd></td><td>Căn phải - dùng cho ngày tháng, ký tên</td></tr>
+              <tr><td>Justify (Đều)</td><td><kbd>Ctrl+J</kbd></td><td>Căn đều hai bên - dùng cho nội dung chính</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info-box note">
+          <span class="box-icon">📌</span>
+          <div>Văn bản hành chính VN luôn căn đều hai bên (<strong>Justify</strong>) cho phần nội dung.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📏</span> 3.2 Thụt lề (Indentation)</h2>
+        <p>Thụt lề giúp phân biệt các đoạn văn và tạo cấu trúc rõ ràng.</p>
+        <div class="card">
+          <h3>Các loại thụt lề</h3>
+          <ul>
+            <li><strong>Left Indent</strong> – Thụt toàn bộ đoạn từ bên trái</li>
+            <li><strong>Right Indent</strong> – Thụt toàn bộ đoạn từ bên phải</li>
+            <li><strong>First Line Indent</strong> – Chỉ thụt dòng đầu tiên (phổ biến nhất)</li>
+            <li><strong>Hanging Indent</strong> – Thụt các dòng sau, dòng đầu giữ nguyên</li>
+          </ul>
+        </div>
+        <div class="shortcut-grid">
+          <div class="shortcut-item"><span>Tăng thụt lề</span><kbd>Tab</kbd></div>
+          <div class="shortcut-item"><span>Giảm thụt lề</span><kbd>Shift+Tab</kbd></div>
+          <div class="shortcut-item"><span>Tăng indent</span><kbd>Ctrl+M</kbd></div>
+          <div class="shortcut-item"><span>Giảm indent</span><kbd>Ctrl+Shift+M</kbd></div>
+        </div>
+        <div class="info-box tip">
+          <span class="box-icon">💡</span>
+          <div>Để tạo <strong>First Line Indent</strong>: Home → Paragraph ↘ → Special → First line → By: 1.27cm (mặc định).</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">↕️</span> 3.3 Khoảng cách dòng & đoạn</h2>
+        <div class="card">
+          <h3>Line Spacing (Khoảng cách dòng)</h3>
+          <table class="styled-table">
+            <thead><tr><th>Giá trị</th><th>Phím tắt</th><th>Dùng cho</th></tr></thead>
+            <tbody>
+              <tr><td>Single (1.0)</td><td><kbd>Ctrl+1</kbd></td><td>Bảng, ghi chú</td></tr>
+              <tr><td>1.5 lines</td><td><kbd>Ctrl+5</kbd></td><td>Văn bản thông thường</td></tr>
+              <tr><td>Double (2.0)</td><td><kbd>Ctrl+2</kbd></td><td>Luận văn, bản thảo</td></tr>
+              <tr><td>Exactly</td><td>—</td><td>Giá trị chính xác (pt)</td></tr>
+              <tr><td>Multiple</td><td>—</td><td>Tùy chỉnh (VD: 1.2, 1.3)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Paragraph Spacing (Khoảng cách đoạn)</h3>
+          <ul>
+            <li><strong>Before</strong> – Khoảng cách trước đoạn (pt)</li>
+            <li><strong>After</strong> – Khoảng cách sau đoạn (pt)</li>
+          </ul>
+          <p>Mặc định Word: Before 0pt, After 8pt. Văn bản hành chính: trước 6pt, sau 6pt.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📋</span> 3.4 Bullets & Numbering</h2>
+        <p>Danh sách đánh dấu (Bullets) và danh sách đánh số (Numbering) giúp trình bày thông tin có cấu trúc.</p>
+        <div class="card">
+          <h3>Cách tạo danh sách</h3>
+          <div class="steps">
+            <div class="step"><div class="step-content"><p>Tab Home → nhóm Paragraph → chọn <strong>Bullets</strong> hoặc <strong>Numbering</strong></p></div></div>
+            <div class="step"><div class="step-content"><p>Gõ nội dung → Enter để thêm mục mới</p></div></div>
+            <div class="step"><div class="step-content"><p>Nhấn <kbd>Tab</kbd> để tạo cấp con (sub-level), <kbd>Shift+Tab</kbd> để quay lại cấp cha</p></div></div>
+            <div class="step"><div class="step-content"><p>Nhấn <strong>Enter 2 lần</strong> hoặc <strong>Backspace</strong> ở dòng trống để kết thúc danh sách</p></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Multilevel List (Danh sách đa cấp)</h3>
+          <p>Dùng cho mục lục, dàn bài, quy trình phức tạp:</p>
+          <div class="code-block">1. Chương I
+   1.1. Mục 1
+      1.1.1. Tiểu mục a
+      1.1.2. Tiểu mục b
+   1.2. Mục 2
+2. Chương II</div>
+          <p>Vào <strong>Home → Multilevel List</strong> → Chọn mẫu phù hợp.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📍</span> 3.5 Tab Stops</h2>
+        <p>Tab Stops định vị trí dừng khi nhấn phím Tab, rất hữu ích cho việc tạo form, mục lục.</p>
+        <div class="card">
+          <h3>Các loại Tab Stop</h3>
+          <table class="styled-table">
+            <thead><tr><th>Loại</th><th>Ký hiệu</th><th>Mô tả</th></tr></thead>
+            <tbody>
+              <tr><td>Left Tab</td><td>L</td><td>Text bắt đầu từ vị trí tab sang phải</td></tr>
+              <tr><td>Center Tab</td><td>⊥</td><td>Text căn giữa tại vị trí tab</td></tr>
+              <tr><td>Right Tab</td><td>⌐</td><td>Text kết thúc tại vị trí tab</td></tr>
+              <tr><td>Decimal Tab</td><td>.</td><td>Căn theo dấu thập phân</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Leader</strong> (đường dẫn tab): dấu chấm, gạch ngang, gạch dưới nối giữa các tab – thường dùng cho mục lục.</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎯</span> 3.6 Bài tập thực hành</h2>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 3.1 – Soạn nội quy (Dễ)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Soạn "NỘI QUY CÔNG TY" gồm: Tiêu đề căn giữa, Bold, 16pt. Nội dung 5 điều quy định dạng Numbering, căn Justify, First Line Indent 1.27cm, Line spacing 1.5.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a1')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a1">
+              <h4>✅ Đáp án:</h4>
+              <p>Gõ tiêu đề → <kbd>Ctrl+E</kbd>, Bold, 16pt → Enter → <kbd>Ctrl+J</kbd> → Paragraph: First line 1.27cm, Line spacing 1.5 → Numbering → Gõ 5 điều.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 3.2 – Mục lục với Tab (TB)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo mục lục giả với Tab Stop: Left tab ở 1cm, Right tab ở 15cm với Leader dấu chấm. VD:</p>
+              <div class="code-block">Chương 1: Giới thiệu...................1
+Chương 2: Nội dung chính...............5
+Chương 3: Kết luận....................12</div>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a2')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a2">
+              <h4>✅ Đáp án:</h4>
+              <p>Paragraph → Tabs → Position: 15cm, Alignment: Right, Leader: 2 (dấu chấm) → Set → OK. Gõ "Chương 1: Giới thiệu" → nhấn Tab → gõ "1".</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 3.3 – Báo cáo chuyên nghiệp (Khó)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Soạn một báo cáo ngắn (1 trang) với đầy đủ: Tiêu đề (Center, 16pt, Bold), phần mở đầu (Justify, First line, 1.5 spacing), danh sách Multilevel 3 cấp, phần kết luận, ngày tháng căn phải.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a3')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a3">
+              <h4>✅ Đáp án:</h4>
+              <p>Áp dụng tổng hợp: <kbd>Ctrl+E</kbd> cho tiêu đề, <kbd>Ctrl+J</kbd> cho nội dung, First Line Indent 1.27cm, Multilevel List cho dàn bài, <kbd>Ctrl+R</kbd> cho ngày tháng cuối.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Notes Section -->
+      <section class="notes-section" id="notes-section" data-page="chuong3">
+        <h2 class="section-title"><span class="icon">📝</span> Ghi chú của bạn <span class="notes-count-badge"><span class="notes-count">0</span></span></h2>
+        <form class="notes-form">
+          <textarea class="notes-input" placeholder="Viết ghi chú tại đây..." rows="1"></textarea>
+          <button type="submit" class="notes-submit">💾 Lưu</button>
+        </form>
+        <div class="notes-list"></div>
+      </section>
+
+      <div class="chapter-nav-bottom">
+        <a href="chuong2.html"><small>← Chương trước</small> Định dạng văn bản</a>
+        <a href="chuong4.html"><small>Chương tiếp →</small> Bảng biểu</a>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('show');}
+    function toggleAnswer(id){document.getElementById(id).classList.toggle('show');}
+  </script>
+  <script src="notes.js"></script>
+</body>
+</html>

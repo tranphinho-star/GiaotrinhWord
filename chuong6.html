@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 6: Định dạng Trang</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="page-wrapper">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header"><div class="logo">W</div><h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2></div>
+      <div class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">🏠</span> Trang chủ</a><div class="nav-divider"></div>
+        <a href="chuong1.html"><span class="nav-icon">📘</span> Ch.1<span class="nav-num">01</span></a>
+        <a href="chuong2.html"><span class="nav-icon">✏️</span> Ch.2<span class="nav-num">02</span></a>
+        <a href="chuong3.html"><span class="nav-icon">📐</span> Ch.3<span class="nav-num">03</span></a>
+        <a href="chuong4.html"><span class="nav-icon">📊</span> Ch.4<span class="nav-num">04</span></a>
+        <a href="chuong5.html"><span class="nav-icon">🖼️</span> Ch.5<span class="nav-num">05</span></a>
+        <a href="chuong6.html" class="active"><span class="nav-icon">📄</span> Ch.6<span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Ch.7<span class="nav-num">07</span></a>
+        <a href="chuong8.html"><span class="nav-icon">📨</span> Ch.8<span class="nav-num">08</span></a>
+        <a href="chuong9.html"><span class="nav-icon">⚡</span> Ch.9<span class="nav-num">09</span></a>
+        <a href="chuong10.html"><span class="nav-icon">📋</span> Ch.10<span class="nav-num">10</span></a>
+        <div class="nav-divider"></div><a href="bai-tap.html"><span class="nav-icon">🎯</span> Bài tập</a>
+      </div>
+    </nav>
+    <main class="main-content content">
+      <div class="chapter-header">
+        <div class="ch-num">Chương 06</div>
+        <h1>Định dạng Trang</h1>
+        <p>Page Size, Margins, Orientation, Columns, Page Breaks, Watermark và Page Borders.</p>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📐</span> 6.1 Kích thước & Lề trang</h2>
+        <div class="card">
+          <h3>Page Size (Layout → Size)</h3>
+          <table class="styled-table">
+            <thead><tr><th>Khổ giấy</th><th>Kích thước</th><th>Dùng cho</th></tr></thead>
+            <tbody>
+              <tr><td>A4</td><td>21 × 29.7 cm</td><td>Văn bản tiêu chuẩn (phổ biến nhất)</td></tr>
+              <tr><td>A5</td><td>14.8 × 21 cm</td><td>Sổ tay, sách nhỏ</td></tr>
+              <tr><td>A3</td><td>29.7 × 42 cm</td><td>Poster, bảng biểu lớn</td></tr>
+              <tr><td>Letter</td><td>21.6 × 27.9 cm</td><td>Tiêu chuẩn Mỹ</td></tr>
+              <tr><td>Legal</td><td>21.6 × 35.6 cm</td><td>Văn bản pháp lý Mỹ</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Margins (Layout → Margins)</h3>
+          <table class="styled-table">
+            <thead><tr><th>Lề</th><th>Chuẩn VN (NĐ30)</th><th>Normal (Word)</th></tr></thead>
+            <tbody>
+              <tr><td>Top (Trên)</td><td>2.0 - 2.5 cm</td><td>2.54 cm</td></tr>
+              <tr><td>Bottom (Dưới)</td><td>2.0 - 2.5 cm</td><td>2.54 cm</td></tr>
+              <tr><td>Left (Trái)</td><td>3.0 - 3.5 cm</td><td>3.18 cm</td></tr>
+              <tr><td>Right (Phải)</td><td>1.5 - 2.0 cm</td><td>3.18 cm</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info-box note">
+          <span class="box-icon">📌</span>
+          <div>Custom Margins: Layout → Margins → <strong>Custom Margins...</strong> để nhập giá trị chính xác.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🔄</span> 6.2 Orientation & Columns</h2>
+        <div class="card">
+          <h3>Orientation (Hướng trang)</h3>
+          <ul>
+            <li><strong>Portrait</strong> (Dọc) – Mặc định, dùng cho hầu hết văn bản</li>
+            <li><strong>Landscape</strong> (Ngang) – Dùng cho bảng rộng, biểu đồ, poster</li>
+          </ul>
+          <p>Layout → Orientation → chọn Portrait/Landscape</p>
+        </div>
+        <div class="card">
+          <h3>Columns (Cột báo)</h3>
+          <p>Layout → Columns → chọn số cột (1, 2, 3 hoặc More Columns...)</p>
+          <ul>
+            <li>Tùy chỉnh: chiều rộng mỗi cột, khoảng cách giữa các cột</li>
+            <li><strong>Line between</strong>: đường kẻ giữa các cột</li>
+            <li>Có thể áp dụng cho toàn tài liệu hoặc chỉ phần được chọn</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📄</span> 6.3 Page Breaks & Section Breaks</h2>
+        <div class="card">
+          <h3>Page Break (Ngắt trang)</h3>
+          <p><kbd>Ctrl+Enter</kbd> hoặc Insert → Page Break</p>
+          <p>Bắt đầu nội dung mới từ trang tiếp theo. <strong>Không dùng Enter nhiều lần</strong> để xuống trang!</p>
+        </div>
+        <div class="card">
+          <h3>Section Break (Ngắt phần)</h3>
+          <p>Layout → Breaks:</p>
+          <table class="styled-table">
+            <thead><tr><th>Loại</th><th>Mô tả</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Next Page</strong></td><td>Phần mới bắt đầu trang tiếp (phổ biến nhất)</td></tr>
+              <tr><td><strong>Continuous</strong></td><td>Phần mới cùng trang (dùng cho cột khác nhau)</td></tr>
+              <tr><td><strong>Even Page</strong></td><td>Phần mới ở trang chẵn tiếp theo</td></tr>
+              <tr><td><strong>Odd Page</strong></td><td>Phần mới ở trang lẻ tiếp theo</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info-box important">
+          <span class="box-icon">🔥</span>
+          <div><strong>Tại sao cần Section Break?</strong> Để có Header/Footer khác nhau, hướng trang khác nhau, hoặc đánh số trang khác nhau giữa các phần.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">💧</span> 6.4 Watermark & Page Background</h2>
+        <div class="card">
+          <h3>Watermark (Chữ chìm)</h3>
+          <p>Design → Watermark:</p>
+          <ul>
+            <li><strong>Text watermark</strong>: "CONFIDENTIAL", "DRAFT", "BẢN NHÁP"...</li>
+            <li><strong>Picture watermark</strong>: Logo công ty làm nền</li>
+            <li>Custom: chọn Font, Size, Color, Layout (Diagonal/Horizontal)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Page Color & Page Borders</h3>
+          <ul>
+            <li><strong>Page Color</strong> (Design → Page Color): Tô nền trang</li>
+            <li><strong>Page Borders</strong> (Design → Page Borders): Viền trang trang trí, có Art borders (hoa, lá...)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎯</span> 6.5 Bài tập thực hành</h2>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 6.1 – Định dạng luận văn (TB)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Thiết lập trang: A4, lề theo chuẩn VN (trên 2.5, dưới 2.5, trái 3.5, phải 2.0cm). Trang bìa: căn giữa, không đánh số. Sau bìa: Section Break → Next Page. Phần nội dung: Header có tên luận văn, Footer có số trang.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a1')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a1"><h4>✅ Đáp án:</h4><p>Layout → Margins → Custom: Top/Bottom 2.5, Left 3.5, Right 2.0 → Tạo bìa → Layout → Breaks → Next Page → Uncheck "Link to Previous" trong Header/Footer → Thêm nội dung Header/Footer cho phần 2.</p></div>
+          </div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 6.2 – Bản tin 2 cột (Khó)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo bản tin (newsletter): Tiêu đề 1 cột toàn trang. Nội dung chính 2 cột có đường kẻ giữa. Trang 2 landscape chứa bảng thống kê rộng. Watermark "BẢN TIN NỘI BỘ". Page Border art cho trang 1.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a2')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a2"><h4>✅ Đáp án:</h4><p>Gõ tiêu đề → Continuous Section Break → Chọn nội dung → Columns: 2 + Line between → Next Page Section Break → Layout → Orientation → Landscape (cho section 2) → Design → Watermark → Custom Text → Page Borders → Art.</p></div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Notes Section -->
+      <section class="notes-section" id="notes-section" data-page="chuong6">
+        <h2 class="section-title"><span class="icon">📝</span> Ghi chú của bạn <span class="notes-count-badge"><span class="notes-count">0</span></span></h2>
+        <form class="notes-form">
+          <textarea class="notes-input" placeholder="Viết ghi chú tại đây..." rows="1"></textarea>
+          <button type="submit" class="notes-submit">💾 Lưu</button>
+        </form>
+        <div class="notes-list"></div>
+      </section>
+
+      <div class="chapter-nav-bottom">
+        <a href="chuong5.html"><small>← Chương trước</small> Hình ảnh & Đồ họa</a>
+        <a href="chuong7.html"><small>Chương tiếp →</small> Header, Footer & Mục lục</a>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('show');}
+    function toggleAnswer(id){document.getElementById(id).classList.toggle('show');}
+  </script>
+  <script src="notes.js"></script>
+</body>
+</html>

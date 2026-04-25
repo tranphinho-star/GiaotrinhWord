@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 9: Thủ thuật nâng cao</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="page-wrapper">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header"><div class="logo">W</div><h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2></div>
+      <div class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">🏠</span> Trang chủ</a><div class="nav-divider"></div>
+        <a href="chuong1.html"><span class="nav-icon">📘</span> Ch.1<span class="nav-num">01</span></a>
+        <a href="chuong2.html"><span class="nav-icon">✏️</span> Ch.2<span class="nav-num">02</span></a>
+        <a href="chuong3.html"><span class="nav-icon">📐</span> Ch.3<span class="nav-num">03</span></a>
+        <a href="chuong4.html"><span class="nav-icon">📊</span> Ch.4<span class="nav-num">04</span></a>
+        <a href="chuong5.html"><span class="nav-icon">🖼️</span> Ch.5<span class="nav-num">05</span></a>
+        <a href="chuong6.html"><span class="nav-icon">📄</span> Ch.6<span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Ch.7<span class="nav-num">07</span></a>
+        <a href="chuong8.html"><span class="nav-icon">📨</span> Ch.8<span class="nav-num">08</span></a>
+        <a href="chuong9.html" class="active"><span class="nav-icon">⚡</span> Ch.9<span class="nav-num">09</span></a>
+        <a href="chuong10.html"><span class="nav-icon">📋</span> Ch.10<span class="nav-num">10</span></a>
+        <div class="nav-divider"></div><a href="bai-tap.html"><span class="nav-icon">🎯</span> Bài tập</a>
+      </div>
+    </nav>
+    <main class="main-content content">
+      <div class="chapter-header">
+        <div class="ch-num">Chương 09</div>
+        <h1>Thủ thuật nâng cao</h1>
+        <p>Find & Replace nâng cao, Macros, Styles, Track Changes, Protect Document.</p>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🔍</span> 9.1 Find & Replace nâng cao</h2>
+        <p>Ngoài tìm/thay thế thông thường (<kbd>Ctrl+H</kbd>), Word hỗ trợ Wildcards (ký tự đại diện) rất mạnh.</p>
+        <div class="card">
+          <h3>Wildcards phổ biến</h3>
+          <table class="styled-table">
+            <thead><tr><th>Ký tự</th><th>Ý nghĩa</th><th>Ví dụ</th></tr></thead>
+            <tbody>
+              <tr><td><code>?</code></td><td>1 ký tự bất kỳ</td><td><code>b?t</code> → bat, bet, bit, but</td></tr>
+              <tr><td><code>*</code></td><td>Chuỗi ký tự bất kỳ</td><td><code>b*t</code> → bt, bat,boat, burnt</td></tr>
+              <tr><td><code>[abc]</code></td><td>1 trong các ký tự</td><td><code>[bm]at</code> → bat, mat</td></tr>
+              <tr><td><code>[a-z]</code></td><td>Phạm vi ký tự</td><td><code>[a-d]og</code> → aog, bog, cog, dog</td></tr>
+              <tr><td><code>&lt;</code></td><td>Đầu từ</td><td><code>&lt;pro</code> → program, project</td></tr>
+              <tr><td><code>&gt;</code></td><td>Cuối từ</td><td><code>ing&gt;</code> → running, going</td></tr>
+              <tr><td><code>{n}</code></td><td>Lặp n lần</td><td><code>[0-9]{3}</code> → 3 chữ số liên tiếp</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Thủ thuật Replace hữu ích</h3>
+          <ul>
+            <li><strong>Xóa dòng trống:</strong> Find: <code>^p^p</code> → Replace: <code>^p</code> (lặp nhiều lần)</li>
+            <li><strong>Xóa khoảng trắng thừa:</strong> Find: <code>  </code>(2 space) → Replace: <code> </code>(1 space)</li>
+            <li><strong>Đổi định dạng:</strong> Find: text → Replace: (để trống) → Format → Bold (chỉ đổi format)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🤖</span> 9.2 Macros</h2>
+        <p>Macro tự động hóa các thao tác lặp lại, tiết kiệm thời gian đáng kể.</p>
+        <div class="card">
+          <h3>Record Macro (Ghi macro)</h3>
+          <div class="steps">
+            <div class="step"><div class="step-content"><p>View → Macros → <strong>Record Macro</strong></p></div></div>
+            <div class="step"><div class="step-content"><p>Đặt tên macro, gán phím tắt hoặc nút toolbar</p></div></div>
+            <div class="step"><div class="step-content"><p>Thực hiện các thao tác muốn tự động hóa</p></div></div>
+            <div class="step"><div class="step-content"><p>View → Macros → <strong>Stop Recording</strong></p></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Ví dụ Macro hữu ích</h3>
+          <ul>
+            <li><strong>Macro định dạng văn bản hành chính:</strong> Tự động set Font TNR 13pt, Justify, Line spacing 1.5, Margins chuẩn VN</li>
+            <li><strong>Macro chèn header công ty:</strong> Tự động thêm logo, tên công ty, địa chỉ</li>
+            <li><strong>Macro dọn dẹp:</strong> Xóa dòng trống, khoảng trắng thừa, chuyển font</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎨</span> 9.3 Styles & Themes</h2>
+        <div class="card">
+          <h3>Styles (Kiểu)</h3>
+          <p>Styles định nghĩa bộ định dạng trọn gói (font, size, color, spacing, indent...) áp dụng 1 click:</p>
+          <ul>
+            <li><strong>Normal</strong> – Đoạn văn thông thường</li>
+            <li><strong>Heading 1-9</strong> – Các cấp tiêu đề</li>
+            <li><strong>Title, Subtitle</strong> – Tiêu đề chính, phụ</li>
+            <li><strong>Quote</strong> – Trích dẫn</li>
+          </ul>
+          <p><strong>Tạo Style mới:</strong> Home → Styles → ↘ → New Style → thiết lập và đặt tên.</p>
+          <p><strong>Modify Style:</strong> Click phải vào Style → Modify → thay đổi.</p>
+        </div>
+        <div class="card">
+          <h3>Themes (Chủ đề)</h3>
+          <p>Design → Themes: thay đổi toàn bộ bảng màu, font, effects cho tài liệu chỉ với 1 click.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📝</span> 9.4 Track Changes & Comments</h2>
+        <div class="card">
+          <h3>Track Changes (Theo dõi thay đổi)</h3>
+          <p><kbd>Ctrl+Shift+E</kbd> hoặc Review → Track Changes:</p>
+          <ul>
+            <li>Khi bật: mọi chỉnh sửa được đánh dấu (thêm = gạch chân, xóa = gạch ngang)</li>
+            <li><strong>Accept</strong> / <strong>Reject</strong> từng thay đổi hoặc tất cả</li>
+            <li>Chế độ hiển thị: All Markup, Simple Markup, No Markup, Original</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Comments (Nhận xét)</h3>
+          <p>Review → New Comment (hoặc <kbd>Ctrl+Alt+M</kbd>): thêm ghi chú vào vùng văn bản được chọn.</p>
+          <ul>
+            <li>Reply comment: trả lời nhận xét</li>
+            <li>Resolve: đánh dấu đã giải quyết</li>
+            <li>Delete: xóa nhận xét</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🔒</span> 9.5 Bảo vệ tài liệu</h2>
+        <div class="card">
+          <h3>Protect Document</h3>
+          <ul>
+            <li><strong>Mark as Final</strong> – Đánh dấu hoàn tất (chỉ đọc, có thể bỏ)</li>
+            <li><strong>Encrypt with Password</strong> – Mật khẩu mở file</li>
+            <li><strong>Restrict Editing</strong> – Giới hạn: chỉ comment, chỉ fill form, chỉ xem</li>
+            <li><strong>Add Digital Signature</strong> – Chữ ký số</li>
+          </ul>
+          <p>File → Info → Protect Document → chọn phương thức.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎯</span> 9.6 Bài tập thực hành</h2>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 9.1 – Find & Replace nâng cao (TB)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Mở file văn bản bất kỳ. Dùng Find & Replace: (1) Xóa tất cả dòng trống. (2) Thay 2+ khoảng trắng thành 1. (3) Bôi đậm tất cả số điện thoại (Wildcards: <code>[0-9]{10}</code>).</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a1')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a1"><h4>✅ Đáp án:</h4><p>(1) <kbd>Ctrl+H</kbd>: Find <code>^p^p</code>, Replace <code>^p</code>, Replace All (lặp). (2) Find <code> {2,}</code> (Use wildcards), Replace <code> </code>. (3) Find <code>[0-9]{10}</code>, Replace để trống → Format → Bold.</p></div>
+          </div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 9.2 – Tạo Macro (Khó)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo Macro "DinhDangHanhChinh" tự động: Font TNR 13pt, Justify, Line spacing 1.5 (Exactly 22pt), Margins (trên 2, dưới 2, trái 3, phải 1.5 cm). Gán phím tắt <kbd>Ctrl+Shift+H</kbd>.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a2')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a2"><h4>✅ Đáp án:</h4><p>View → Macros → Record → Tên: DinhDangHanhChinh → Keyboard → <kbd>Ctrl+Shift+H</kbd> → Assign → Thực hiện: Ctrl+A → Font TNR 13pt → Ctrl+J → Paragraph spacing Exactly 22pt → Layout → Custom Margins → Stop Recording.</p></div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Notes Section -->
+      <section class="notes-section" id="notes-section" data-page="chuong9">
+        <h2 class="section-title"><span class="icon">📝</span> Ghi chú của bạn <span class="notes-count-badge"><span class="notes-count">0</span></span></h2>
+        <form class="notes-form">
+          <textarea class="notes-input" placeholder="Viết ghi chú tại đây..." rows="1"></textarea>
+          <button type="submit" class="notes-submit">💾 Lưu</button>
+        </form>
+        <div class="notes-list"></div>
+      </section>
+
+      <div class="chapter-nav-bottom">
+        <a href="chuong8.html"><small>← Chương trước</small> Mail Merge</a>
+        <a href="chuong10.html"><small>Chương tiếp →</small> Mẫu văn bản</a>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('show');}
+    function toggleAnswer(id){document.getElementById(id).classList.toggle('show');}
+  </script>
+  <script src="notes.js"></script>
+</body>
+</html>

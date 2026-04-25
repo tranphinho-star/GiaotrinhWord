@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giáo trình Microsoft Word toàn diện từ cơ bản đến nâng cao. Bao gồm 10 chương, bài tập thực hành, mẫu văn bản hành chính và hợp đồng.">
+  <title>Giáo Trình Microsoft Word - Từ Cơ Bản Đến Nâng Cao</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+  <div class="page-wrapper">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">W</div>
+        <h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2>
+      </div>
+      <div class="sidebar-nav">
+        <a href="index.html" class="active"><span class="nav-icon">🏠</span> Trang chủ</a>
+        <div class="nav-divider"></div>
+        <a href="chuong1.html"><span class="nav-icon">📘</span> Chương 1: Giới thiệu <span class="nav-num">01</span></a>
+        <a href="chuong2.html"><span class="nav-icon">✏️</span> Chương 2: Định dạng VB <span class="nav-num">02</span></a>
+        <a href="chuong3.html"><span class="nav-icon">📐</span> Chương 3: Định dạng ĐV <span class="nav-num">03</span></a>
+        <a href="chuong4.html"><span class="nav-icon">📊</span> Chương 4: Bảng biểu <span class="nav-num">04</span></a>
+        <a href="chuong5.html"><span class="nav-icon">🖼️</span> Chương 5: Hình ảnh <span class="nav-num">05</span></a>
+        <a href="chuong6.html"><span class="nav-icon">📄</span> Chương 6: Định dạng trang <span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Chương 7: Header & Mục lục <span class="nav-num">07</span></a>
+        <a href="chuong8.html"><span class="nav-icon">📨</span> Chương 8: Mail Merge <span class="nav-num">08</span></a>
+        <a href="chuong9.html"><span class="nav-icon">⚡</span> Chương 9: Thủ thuật <span class="nav-num">09</span></a>
+        <a href="chuong10.html"><span class="nav-icon">📋</span> Chương 10: Mẫu VB <span class="nav-num">10</span></a>
+        <div class="nav-divider"></div>
+        <a href="bai-tap.html"><span class="nav-icon">🎯</span> Bài tập thực hành</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-badge">📖 Phiên bản 2024</div>
+        <h1>Giáo Trình Microsoft Word</h1>
+        <p>Hướng dẫn toàn diện từ cơ bản đến nâng cao. Bao gồm lý thuyết, bài tập thực hành có đáp án, và các mẫu văn bản thực tế.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="num">10</div><div class="label">Chương học</div></div>
+          <div class="hero-stat"><div class="num">50+</div><div class="label">Ví dụ</div></div>
+          <div class="hero-stat"><div class="num">15+</div><div class="label">Bài tập</div></div>
+          <div class="hero-stat"><div class="num">10+</div><div class="label">Mẫu VB</div></div>
+        </div>
+      </section>
+
+      <!-- Table of Contents -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📚</span> Mục Lục Giáo Trình</h2>
+
+        <div class="chapter-grid">
+          <a href="chuong1.html" class="chapter-card">
+            <div class="ch-icon bg-blue">📘</div>
+            <div class="ch-info">
+              <h3>Chương 1: Giới thiệu Microsoft Word</h3>
+              <p>Giao diện, Ribbon, tạo/mở/lưu tài liệu, phím tắt cơ bản</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+
+          <a href="chuong2.html" class="chapter-card">
+            <div class="ch-icon bg-purple">✏️</div>
+            <div class="ch-info">
+              <h3>Chương 2: Định dạng Văn bản</h3>
+              <p>Font, cỡ chữ, màu sắc, Bold/Italic, Format Painter</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+
+          <a href="chuong3.html" class="chapter-card">
+            <div class="ch-icon bg-cyan">📐</div>
+            <div class="ch-info">
+              <h3>Chương 3: Định dạng Đoạn văn</h3>
+              <p>Căn lề, thụt lề, khoảng cách, Bullets & Numbering, Tabs</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+
+          <a href="chuong4.html" class="chapter-card">
+            <div class="ch-icon bg-green">📊</div>
+            <div class="ch-info">
+              <h3>Chương 4: Bảng biểu (Tables)</h3>
+              <p>Tạo bảng, merge/split, formulas, table styles, bảng lương</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+
+          <a href="chuong5.html" class="chapter-card">
+            <div class="ch-icon bg-orange">🖼️</div>
+            <div class="ch-info">
+              <h3>Chương 5: Hình ảnh & Đồ họa</h3>
+              <p>Pictures, Shapes, SmartArt, WordArt, Text Wrapping</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+
+          <a href="chuong6.html" class="chapter-card">
+            <div class="ch-icon bg-red">📄</div>
+            <div class="ch-info">
+              <h3>Chương 6: Định dạng Trang</h3>
+              <p>Margins, Orientation, Columns, Watermark, Page Breaks</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+
+          <a href="chuong7.html" class="chapter-card">
+            <div class="ch-icon bg-pink">📑</div>
+            <div class="ch-info">
+              <h3>Chương 7: Header, Footer & Mục lục</h3>
+              <p>Header/Footer, Page Numbers, TOC, Footnotes, Bookmarks</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+
+          <a href="chuong8.html" class="chapter-card">
+            <div class="ch-icon bg-blue">📨</div>
+            <div class="ch-info">
+              <h3>Chương 8: Mail Merge & Trộn thư</h3>
+              <p>Trộn thư mời, nhãn dán, phong bì, giấy chứng nhận</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+
+          <a href="chuong9.html" class="chapter-card">
+            <div class="ch-icon bg-purple">⚡</div>
+            <div class="ch-info">
+              <h3>Chương 9: Thủ thuật nâng cao</h3>
+              <p>Find & Replace, Macros, Styles, Track Changes, Protect</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+
+          <a href="chuong10.html" class="chapter-card">
+            <div class="ch-icon bg-green">📋</div>
+            <div class="ch-info">
+              <h3>Chương 10: Mẫu văn bản thực tế</h3>
+              <p>CV, hợp đồng, công văn, quyết định, biên bản, giấy ủy quyền</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+
+          <a href="bai-tap.html" class="chapter-card">
+            <div class="ch-icon bg-orange">🎯</div>
+            <div class="ch-info">
+              <h3>Bài tập Thực hành Tổng hợp</h3>
+              <p>15 bài tập từ cơ bản đến nâng cao kèm đáp án chi tiết</p>
+            </div>
+            <span class="ch-arrow">→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Quick Start -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🚀</span> Bắt đầu nhanh</h2>
+        <div class="card">
+          <h3>💡 Cách sử dụng giáo trình này</h3>
+          <p>Giáo trình được thiết kế để bạn có thể học theo thứ tự từ Chương 1 đến Chương 10, hoặc nhảy đến bất kỳ chương nào bạn cần. Mỗi chương đều có:</p>
+          <ul style="margin: 10px 0 0 20px; color: var(--text-secondary); font-size: 14px;">
+            <li><strong>Lý thuyết</strong> - Giải thích chi tiết từng tính năng</li>
+            <li><strong>Phím tắt</strong> - Bảng tổng hợp phím tắt quan trọng</li>
+            <li><strong>Ví dụ minh họa</strong> - Từ cơ bản đến nâng cao</li>
+            <li><strong>Bài tập</strong> - Có đáp án để tự kiểm tra</li>
+            <li><strong>Mẫu văn bản</strong> - Hợp đồng, công văn, biểu mẫu thực tế</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Keyboard shortcut highlight -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">⌨️</span> Phím tắt thường dùng nhất</h2>
+        <div class="shortcut-grid">
+          <div class="shortcut-item"><span>Lưu file</span> <kbd>Ctrl + S</kbd></div>
+          <div class="shortcut-item"><span>Mở file</span> <kbd>Ctrl + O</kbd></div>
+          <div class="shortcut-item"><span>In tài liệu</span> <kbd>Ctrl + P</kbd></div>
+          <div class="shortcut-item"><span>Hoàn tác</span> <kbd>Ctrl + Z</kbd></div>
+          <div class="shortcut-item"><span>Làm lại</span> <kbd>Ctrl + Y</kbd></div>
+          <div class="shortcut-item"><span>Sao chép</span> <kbd>Ctrl + C</kbd></div>
+          <div class="shortcut-item"><span>Dán</span> <kbd>Ctrl + V</kbd></div>
+          <div class="shortcut-item"><span>In đậm</span> <kbd>Ctrl + B</kbd></div>
+          <div class="shortcut-item"><span>In nghiêng</span> <kbd>Ctrl + I</kbd></div>
+          <div class="shortcut-item"><span>Gạch chân</span> <kbd>Ctrl + U</kbd></div>
+          <div class="shortcut-item"><span>Tìm kiếm</span> <kbd>Ctrl + F</kbd></div>
+          <div class="shortcut-item"><span>Thay thế</span> <kbd>Ctrl + H</kbd></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+      document.getElementById('overlay').classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 2: Định dạng Văn bản</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="page-wrapper">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header"><div class="logo">W</div><h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2></div>
+      <div class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">🏠</span> Trang chủ</a><div class="nav-divider"></div>
+        <a href="chuong1.html"><span class="nav-icon">📘</span> Chương 1 <span class="nav-num">01</span></a>
+        <a href="chuong2.html" class="active"><span class="nav-icon">✏️</span> Chương 2 <span class="nav-num">02</span></a>
+        <a href="chuong3.html"><span class="nav-icon">📐</span> Chương 3 <span class="nav-num">03</span></a>
+        <a href="chuong4.html"><span class="nav-icon">📊</span> Chương 4 <span class="nav-num">04</span></a>
+        <a href="chuong5.html"><span class="nav-icon">🖼️</span> Chương 5 <span class="nav-num">05</span></a>
+        <a href="chuong6.html"><span class="nav-icon">📄</span> Chương 6 <span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Chương 7 <span class="nav-num">07</span></a>
+        <a href="chuong8.html"><span class="nav-icon">📨</span> Chương 8 <span class="nav-num">08</span></a>
+        <a href="chuong9.html"><span class="nav-icon">⚡</span> Chương 9 <span class="nav-num">09</span></a>
+        <a href="chuong10.html"><span class="nav-icon">📋</span> Chương 10 <span class="nav-num">10</span></a>
+        <div class="nav-divider"></div>
+        <a href="bai-tap.html"><span class="nav-icon">🎯</span> Bài tập</a>
+      </div>
+    </nav>
+    <main class="main-content content">
+      <div class="chapter-header">
+        <div class="ch-num">Chương 02</div>
+        <h1>Định dạng Văn bản</h1>
+        <p>Font, cỡ chữ, màu sắc, Bold/Italic/Underline, Format Painter và các thủ thuật định dạng ký tự.</p>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🔤</span> 2.1 Nhóm Font (Home → Font)</h2>
+        <p>Nhóm Font trên tab Home chứa tất cả công cụ định dạng ký tự:</p>
+        <div class="card">
+          <h3>📋 Bảng phím tắt định dạng ký tự</h3>
+          <table class="styled-table">
+            <thead><tr><th>Thuộc tính</th><th>Phím tắt</th><th>Mô tả</th></tr></thead>
+            <tbody>
+              <tr><td>Bold</td><td><kbd>Ctrl+B</kbd></td><td>In đậm</td></tr>
+              <tr><td>Italic</td><td><kbd>Ctrl+I</kbd></td><td>In nghiêng</td></tr>
+              <tr><td>Underline</td><td><kbd>Ctrl+U</kbd></td><td>Gạch chân</td></tr>
+              <tr><td>Strikethrough</td><td>—</td><td>Gạch ngang: <s>text</s></td></tr>
+              <tr><td>Subscript</td><td><kbd>Ctrl+=</kbd></td><td>Chỉ số dưới: H₂O</td></tr>
+              <tr><td>Superscript</td><td><kbd>Ctrl+Shift++</kbd></td><td>Chỉ số trên: X²</td></tr>
+              <tr><td>Change Case</td><td><kbd>Shift+F3</kbd></td><td>Đổi HOA/thường</td></tr>
+              <tr><td>Clear Format</td><td><kbd>Ctrl+Space</kbd></td><td>Xóa định dạng</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎨</span> 2.2 Font và Cỡ chữ</h2>
+        <div class="card">
+          <h3>Font phổ biến cho văn bản tiếng Việt</h3>
+          <table class="styled-table">
+            <thead><tr><th>Font</th><th>Kiểu</th><th>Dùng cho</th></tr></thead>
+            <tbody>
+              <tr><td>Times New Roman</td><td>Serif</td><td>Văn bản hành chính, luận văn</td></tr>
+              <tr><td>Arial</td><td>Sans-serif</td><td>Tài liệu chung, email</td></tr>
+              <tr><td>Calibri</td><td>Sans-serif</td><td>Mặc định Word 2007+</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Phím tắt cỡ chữ</h3>
+        <div class="shortcut-grid">
+          <div class="shortcut-item"><span>Tăng cỡ</span><kbd>Ctrl+Shift+></kbd></div>
+          <div class="shortcut-item"><span>Giảm cỡ</span><kbd>Ctrl+Shift+<</kbd></div>
+          <div class="shortcut-item"><span>Tăng 1pt</span><kbd>Ctrl+]</kbd></div>
+          <div class="shortcut-item"><span>Giảm 1pt</span><kbd>Ctrl+[</kbd></div>
+        </div>
+        <div class="info-box note">
+          <span class="box-icon">📌</span>
+          <div>Văn bản hành chính VN: <strong>Times New Roman, 13-14pt</strong> (Nghị định 30/2020/NĐ-CP).</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🖌️</span> 2.3 Format Painter</h2>
+        <p>Sao chép định dạng từ đoạn này sang đoạn khác – công cụ tiết kiệm thời gian nhất.</p>
+        <div class="steps">
+          <div class="step"><div class="step-content"><p>Chọn văn bản có định dạng muốn sao chép</p></div></div>
+          <div class="step"><div class="step-content"><p>Click <strong>Format Painter</strong> 🖌️ (hoặc <kbd>Ctrl+Shift+C</kbd>)</p></div></div>
+          <div class="step"><div class="step-content"><p>Bôi đen văn bản đích (hoặc <kbd>Ctrl+Shift+V</kbd>)</p></div></div>
+        </div>
+        <div class="info-box tip">
+          <span class="box-icon">💡</span>
+          <div><strong>Double-click</strong> Format Painter để sao chép cho nhiều vùng. Nhấn <kbd>Esc</kbd> để thoát.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">⚙️</span> 2.4 Hộp thoại Font nâng cao</h2>
+        <p>Nhấn <kbd>Ctrl+D</kbd> để mở hộp thoại Font đầy đủ với các tùy chọn nâng cao:</p>
+        <ul>
+          <li><strong>Character Spacing</strong> – Khoảng cách ký tự (Expanded/Condensed)</li>
+          <li><strong>Scale</strong> – Co giãn ký tự theo chiều ngang</li>
+          <li><strong>Position</strong> – Di chuyển ký tự lên/xuống</li>
+          <li><strong>Kerning</strong> – Điều chỉnh khoảng cách cặp ký tự</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎯</span> 2.5 Bài tập thực hành</h2>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 2.1 – Định dạng cơ bản (Dễ)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Soạn: <em>"Công ty TNHH ABC xin thông báo chương trình khuyến mãi giảm 50%."</em></p>
+              <ol>
+                <li>"Công ty TNHH ABC" → Bold, Times New Roman, 14pt, màu xanh</li>
+                <li>"xin thông báo" → Italic</li>
+                <li>"khuyến mãi" → Bold + Underline, màu đỏ</li>
+                <li>"50%" → Bold, 18pt, Superscript cho %</li>
+              </ol>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a1')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a1">
+              <h4>✅ Đáp án:</h4>
+              <p>Gõ toàn bộ → Bôi đen "Công ty TNHH ABC" → <kbd>Ctrl+B</kbd>, chọn Font/Size/Color → Bôi đen "xin thông báo" → <kbd>Ctrl+I</kbd> → Bôi đen "khuyến mãi" → <kbd>Ctrl+B</kbd> + <kbd>Ctrl+U</kbd>, Red → Bôi đen "%" → <kbd>Ctrl+Shift++</kbd></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 2.2 – Công thức hóa học (TB)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Soạn: H₂O, CO₂, H₂SO₄, E=mc², a²+b²=c²</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a2')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a2">
+              <h4>✅ Đáp án:</h4>
+              <p>Gõ "H2O" → Bôi đen "2" → <kbd>Ctrl+=</kbd> (Subscript). Cho mc² → Bôi đen "2" → <kbd>Ctrl+Shift++</kbd> (Superscript).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 2.3 – Format Painter (Khó)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Soạn 5 tiêu đề chương sách. Định dạng tiêu đề 1: Arial, 16pt, Bold, xanh đậm, UPPERCASE. Dùng Format Painter (double-click) áp dụng cho 4 tiêu đề còn lại.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a3')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a3">
+              <h4>✅ Đáp án:</h4>
+              <p>Định dạng tiêu đề 1 → <kbd>Shift+F3</kbd> để UPPERCASE → Double-click Format Painter → Lần lượt bôi đen tiêu đề 2-5 → <kbd>Esc</kbd>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Notes Section -->
+      <section class="notes-section" id="notes-section" data-page="chuong2">
+        <h2 class="section-title"><span class="icon">📝</span> Ghi chú của bạn <span class="notes-count-badge"><span class="notes-count">0</span></span></h2>
+        <form class="notes-form">
+          <textarea class="notes-input" placeholder="Viết ghi chú tại đây..." rows="1"></textarea>
+          <button type="submit" class="notes-submit">💾 Lưu</button>
+        </form>
+        <div class="notes-list"></div>
+      </section>
+
+      <div class="chapter-nav-bottom">
+        <a href="chuong1.html"><small>← Chương trước</small> Giới thiệu Word</a>
+        <a href="chuong3.html"><small>Chương tiếp →</small> Định dạng đoạn văn</a>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('show');}
+    function toggleAnswer(id){document.getElementById(id).classList.toggle('show');}
+  </script>
+  <script src="notes.js"></script>
+</body>
+</html>

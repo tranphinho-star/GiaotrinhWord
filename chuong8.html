@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 8: Mail Merge & Trộn thư</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="page-wrapper">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header"><div class="logo">W</div><h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2></div>
+      <div class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">🏠</span> Trang chủ</a><div class="nav-divider"></div>
+        <a href="chuong1.html"><span class="nav-icon">📘</span> Ch.1<span class="nav-num">01</span></a>
+        <a href="chuong2.html"><span class="nav-icon">✏️</span> Ch.2<span class="nav-num">02</span></a>
+        <a href="chuong3.html"><span class="nav-icon">📐</span> Ch.3<span class="nav-num">03</span></a>
+        <a href="chuong4.html"><span class="nav-icon">📊</span> Ch.4<span class="nav-num">04</span></a>
+        <a href="chuong5.html"><span class="nav-icon">🖼️</span> Ch.5<span class="nav-num">05</span></a>
+        <a href="chuong6.html"><span class="nav-icon">📄</span> Ch.6<span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Ch.7<span class="nav-num">07</span></a>
+        <a href="chuong8.html" class="active"><span class="nav-icon">📨</span> Ch.8<span class="nav-num">08</span></a>
+        <a href="chuong9.html"><span class="nav-icon">⚡</span> Ch.9<span class="nav-num">09</span></a>
+        <a href="chuong10.html"><span class="nav-icon">📋</span> Ch.10<span class="nav-num">10</span></a>
+        <div class="nav-divider"></div><a href="bai-tap.html"><span class="nav-icon">🎯</span> Bài tập</a>
+      </div>
+    </nav>
+    <main class="main-content content">
+      <div class="chapter-header">
+        <div class="ch-num">Chương 08</div>
+        <h1>Mail Merge & Trộn thư</h1>
+        <p>Trộn thư mời, nhãn dán, phong bì, giấy chứng nhận hàng loạt từ danh sách dữ liệu.</p>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📨</span> 8.1 Khái niệm Mail Merge</h2>
+        <p>Mail Merge (Trộn thư) cho phép tạo <strong>nhiều tài liệu</strong> cùng nội dung nhưng khác nhau ở thông tin cá nhân (tên, địa chỉ, số tiền...) từ một mẫu duy nhất + nguồn dữ liệu.</p>
+        <div class="card">
+          <h3>Thành phần của Mail Merge</h3>
+          <ul>
+            <li><strong>Main Document</strong> – Tài liệu mẫu (thư mời, giấy chứng nhận, nhãn...)</li>
+            <li><strong>Data Source</strong> – Nguồn dữ liệu (Excel, Access, danh sách Word, Outlook)</li>
+            <li><strong>Merge Fields</strong> – Trường dữ liệu chèn vào mẫu (<<Họ tên>>, <<Địa chỉ>>)</li>
+            <li><strong>Merged Documents</strong> – Kết quả: nhiều tài liệu riêng lẻ</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📋</span> 8.2 Các bước thực hiện Mail Merge</h2>
+        <div class="steps">
+          <div class="step"><div class="step-content"><p><strong>Start Mail Merge</strong>: Mailings → Start Mail Merge → chọn loại (Letters, Envelopes, Labels...)</p></div></div>
+          <div class="step"><div class="step-content"><p><strong>Select Recipients</strong>: Mailings → Select Recipients → Use an Existing List → chọn file Excel/CSV</p></div></div>
+          <div class="step"><div class="step-content"><p><strong>Insert Merge Fields</strong>: Soạn nội dung mẫu → đặt con trỏ → Mailings → Insert Merge Field → chọn trường (VD: «HoTen», «DiaChi»)</p></div></div>
+          <div class="step"><div class="step-content"><p><strong>Preview Results</strong>: Mailings → Preview Results → duyệt qua từng bản ghi bằng mũi tên</p></div></div>
+          <div class="step"><div class="step-content"><p><strong>Finish & Merge</strong>: Mailings → Finish & Merge → Edit Individual Documents / Print / Send Email</p></div></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📊</span> 8.3 Tạo Data Source</h2>
+        <div class="card">
+          <h3>Dữ liệu mẫu trong Excel</h3>
+          <div class="code-block">| STT | HoTen          | DiaChi              | Email              |
+|-----|----------------|----------------------|--------------------|
+| 1   | Nguyễn Văn A   | 123 Lê Lợi, Q.1     | a@email.com        |
+| 2   | Trần Thị B     | 456 Nguyễn Huệ, Q.3 | b@email.com        |
+| 3   | Lê Văn C       | 789 Hai Bà Trưng     | c@email.com        |</div>
+          <p>Hàng 1 là <strong>tên cột</strong> (sẽ thành Merge Fields). Mỗi hàng sau là 1 bản ghi.</p>
+        </div>
+        <div class="info-box warning">
+          <span class="box-icon">⚠️</span>
+          <div>Đảm bảo file Excel <strong>không có ô merge</strong>, <strong>không có hàng trống</strong>, và tên cột <strong>không chứa ký tự đặc biệt</strong>.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🏷️</span> 8.4 Labels & Envelopes</h2>
+        <div class="card">
+          <h3>Tạo nhãn dán (Labels)</h3>
+          <div class="steps">
+            <div class="step"><div class="step-content"><p>Mailings → Start Mail Merge → <strong>Labels</strong></p></div></div>
+            <div class="step"><div class="step-content"><p>Chọn nhà sản xuất nhãn và mã nhãn (VD: Avery, A4 65 nhãn)</p></div></div>
+            <div class="step"><div class="step-content"><p>Select Recipients → chọn file dữ liệu</p></div></div>
+            <div class="step"><div class="step-content"><p>Insert Merge Fields vào nhãn đầu tiên</p></div></div>
+            <div class="step"><div class="step-content"><p>Mailings → <strong>Update Labels</strong> để áp dụng cho tất cả nhãn</p></div></div>
+            <div class="step"><div class="step-content"><p>Finish & Merge</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🔀</span> 8.5 Rules (Quy tắc điều kiện)</h2>
+        <div class="card">
+          <h3>IF...THEN...ELSE</h3>
+          <p>Mailings → Rules → If...Then...Else:</p>
+          <div class="code-block">IF GioiTinh = "Nam" THEN "Ông" ELSE "Bà"</div>
+          <p>Kết quả tự động thay đổi theo dữ liệu: "Kính gửi <strong>Ông</strong> Nguyễn Văn A" hoặc "Kính gửi <strong>Bà</strong> Trần Thị B".</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎯</span> 8.6 Bài tập thực hành</h2>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 8.1 – Thư mời họp (TB)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo file Excel 10 người (HoTen, ChucVu, PhongBan, Email). Tạo thư mời họp với Mail Merge. Sử dụng IF rule: nếu ChucVu="Giám đốc" thì "Trân trọng kính mời" else "Kính mời".</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a1')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a1"><h4>✅ Đáp án:</h4><p>Tạo Excel → Word: Mailings → Letters → Select Recipients → Insert Merge Fields → Rules → IF ChucVu = "Giám đốc" THEN "Trân trọng kính mời" ELSE "Kính mời" → Preview → Finish & Merge → Edit Individual.</p></div>
+          </div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 8.2 – Giấy chứng nhận hàng loạt (Khó)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Thiết kế mẫu "Giấy chứng nhận hoàn thành khóa học" với WordArt, border, ảnh logo. Tạo data source 20 học viên. Mail Merge để tạo 20 giấy chứng nhận cá nhân.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a2')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a2"><h4>✅ Đáp án:</h4><p>Tạo mẫu A4 landscape → WordArt tiêu đề → Page Border → Logo → Nội dung với Merge Fields: «HoTen», «NgaySinh», «KhoaHoc» → Select Recipients → Preview → Finish & Merge → Print.</p></div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Notes Section -->
+      <section class="notes-section" id="notes-section" data-page="chuong8">
+        <h2 class="section-title"><span class="icon">📝</span> Ghi chú của bạn <span class="notes-count-badge"><span class="notes-count">0</span></span></h2>
+        <form class="notes-form">
+          <textarea class="notes-input" placeholder="Viết ghi chú tại đây..." rows="1"></textarea>
+          <button type="submit" class="notes-submit">💾 Lưu</button>
+        </form>
+        <div class="notes-list"></div>
+      </section>
+
+      <div class="chapter-nav-bottom">
+        <a href="chuong7.html"><small>← Chương trước</small> Header & Mục lục</a>
+        <a href="chuong9.html"><small>Chương tiếp →</small> Thủ thuật nâng cao</a>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('show');}
+    function toggleAnswer(id){document.getElementById(id).classList.toggle('show');}
+  </script>
+  <script src="notes.js"></script>
+</body>
+</html>

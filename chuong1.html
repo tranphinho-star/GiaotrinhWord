@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chương 1: Giới thiệu Microsoft Word - Giao diện Ribbon, tạo/mở/lưu tài liệu, phím tắt cơ bản">
+  <title>Chương 1: Giới thiệu Microsoft Word</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="page-wrapper">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">W</div>
+        <h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2>
+      </div>
+      <div class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">🏠</span> Trang chủ</a>
+        <div class="nav-divider"></div>
+        <a href="chuong1.html" class="active"><span class="nav-icon">📘</span> Chương 1: Giới thiệu <span class="nav-num">01</span></a>
+        <a href="chuong2.html"><span class="nav-icon">✏️</span> Chương 2: Định dạng VB <span class="nav-num">02</span></a>
+        <a href="chuong3.html"><span class="nav-icon">📐</span> Chương 3: Định dạng ĐV <span class="nav-num">03</span></a>
+        <a href="chuong4.html"><span class="nav-icon">📊</span> Chương 4: Bảng biểu <span class="nav-num">04</span></a>
+        <a href="chuong5.html"><span class="nav-icon">🖼️</span> Chương 5: Hình ảnh <span class="nav-num">05</span></a>
+        <a href="chuong6.html"><span class="nav-icon">📄</span> Chương 6: Định dạng trang <span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Chương 7: Header & Mục lục <span class="nav-num">07</span></a>
+        <a href="chuong8.html"><span class="nav-icon">📨</span> Chương 8: Mail Merge <span class="nav-num">08</span></a>
+        <a href="chuong9.html"><span class="nav-icon">⚡</span> Chương 9: Thủ thuật <span class="nav-num">09</span></a>
+        <a href="chuong10.html"><span class="nav-icon">📋</span> Chương 10: Mẫu VB <span class="nav-num">10</span></a>
+        <div class="nav-divider"></div>
+        <a href="bai-tap.html"><span class="nav-icon">🎯</span> Bài tập thực hành</a>
+      </div>
+    </nav>
+
+    <main class="main-content content">
+      <div class="chapter-header">
+        <div class="ch-num">Chương 01</div>
+        <h1>Giới thiệu Microsoft Word</h1>
+        <p>Tìm hiểu tổng quan về Microsoft Word, giao diện Ribbon, và các thao tác cơ bản nhất.</p>
+      </div>
+
+      <!-- 1.1 -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📖</span> 1.1 Microsoft Word là gì?</h2>
+        <p>Microsoft Word là phần mềm soạn thảo văn bản (word processing) phổ biến nhất thế giới, thuộc bộ Microsoft Office. Word cho phép bạn tạo, chỉnh sửa, định dạng và in ấn các tài liệu chuyên nghiệp.</p>
+
+        <div class="card">
+          <h3>🔄 Các phiên bản Microsoft Word</h3>
+          <table class="styled-table">
+            <thead><tr><th>Phiên bản</th><th>Năm</th><th>Đặc điểm nổi bật</th></tr></thead>
+            <tbody>
+              <tr><td>Word 2003</td><td>2003</td><td>Giao diện menu truyền thống</td></tr>
+              <tr><td>Word 2007</td><td>2007</td><td>Ribbon UI lần đầu xuất hiện, định dạng .docx</td></tr>
+              <tr><td>Word 2010</td><td>2010</td><td>Backstage View, cải thiện đồ họa</td></tr>
+              <tr><td>Word 2013</td><td>2013</td><td>Read Mode, tích hợp SkyDrive</td></tr>
+              <tr><td>Word 2016</td><td>2016</td><td>Real-time collaboration, Tell Me</td></tr>
+              <tr><td>Word 2019</td><td>2019</td><td>3D Models, Focus Mode, SVG</td></tr>
+              <tr><td>Word 365</td><td>2020+</td><td>Cloud-based, AI Copilot, cập nhật liên tục</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 1.2 -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🖥️</span> 1.2 Giao diện Microsoft Word</h2>
+        <p>Khi mở Word, bạn sẽ thấy giao diện chính gồm các thành phần sau:</p>
+
+        <div class="card">
+          <h3>📌 Các thành phần chính của giao diện</h3>
+          <ol>
+            <li><strong>Title Bar</strong> – Thanh tiêu đề, hiển thị tên file đang mở</li>
+            <li><strong>Quick Access Toolbar</strong> – Thanh công cụ nhanh (Save, Undo, Redo)</li>
+            <li><strong>Ribbon</strong> – Thanh công cụ chính, chia thành các Tab:
+              <ul>
+                <li><strong>Home</strong>: Font, Paragraph, Styles, Editing</li>
+                <li><strong>Insert</strong>: Tables, Pictures, Shapes, Charts, Header/Footer</li>
+                <li><strong>Design</strong>: Themes, Page Background</li>
+                <li><strong>Layout</strong>: Page Setup, Paragraph spacing</li>
+                <li><strong>References</strong>: TOC, Footnotes, Citations</li>
+                <li><strong>Mailings</strong>: Mail Merge, Envelopes, Labels</li>
+                <li><strong>Review</strong>: Spelling, Comments, Track Changes</li>
+                <li><strong>View</strong>: Document Views, Zoom, Navigation Pane</li>
+              </ul>
+            </li>
+            <li><strong>Ruler</strong> – Thước kẻ (ngang và dọc)</li>
+            <li><strong>Document Area</strong> – Vùng soạn thảo chính</li>
+            <li><strong>Status Bar</strong> – Thanh trạng thái (số trang, số từ, ngôn ngữ, zoom)</li>
+            <li><strong>Scroll Bar</strong> – Thanh cuộn dọc và ngang</li>
+          </ol>
+        </div>
+
+        <div class="info-box tip">
+          <span class="box-icon">💡</span>
+          <div><strong>Mẹo:</strong> Nhấn <kbd>Ctrl + F1</kbd> để ẩn/hiện Ribbon, giúp mở rộng vùng soạn thảo.</div>
+        </div>
+      </section>
+
+      <!-- 1.3 -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📁</span> 1.3 Tạo, Mở và Lưu tài liệu</h2>
+
+        <h3>Tạo tài liệu mới</h3>
+        <div class="steps">
+          <div class="step"><div class="step-content"><p>Mở Word → Chọn <strong>Blank document</strong> (tài liệu trống)</p></div></div>
+          <div class="step"><div class="step-content"><p>Hoặc nhấn <kbd>Ctrl + N</kbd> để tạo nhanh tài liệu mới</p></div></div>
+          <div class="step"><div class="step-content"><p>Chọn template (mẫu) có sẵn nếu muốn: Resume, Letter, Report...</p></div></div>
+        </div>
+
+        <h3>Mở tài liệu có sẵn</h3>
+        <div class="steps">
+          <div class="step"><div class="step-content"><p>Nhấn <kbd>Ctrl + O</kbd> hoặc vào <strong>File → Open</strong></p></div></div>
+          <div class="step"><div class="step-content"><p>Duyệt đến thư mục chứa file → Chọn file → Nhấn <strong>Open</strong></p></div></div>
+        </div>
+
+        <h3>Lưu tài liệu</h3>
+        <div class="card">
+          <h3>💾 So sánh các cách lưu file</h3>
+          <table class="styled-table">
+            <thead><tr><th>Thao tác</th><th>Phím tắt</th><th>Mô tả</th></tr></thead>
+            <tbody>
+              <tr><td>Save</td><td><kbd>Ctrl + S</kbd></td><td>Lưu file (lần đầu sẽ hỏi tên + vị trí)</td></tr>
+              <tr><td>Save As</td><td><kbd>F12</kbd></td><td>Lưu với tên/vị trí/định dạng mới</td></tr>
+              <tr><td>Auto Save</td><td>—</td><td>Tự động lưu (Word 365 + OneDrive)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box warning">
+          <span class="box-icon">⚠️</span>
+          <div><strong>Lưu ý:</strong> Luôn lưu file thường xuyên bằng <kbd>Ctrl + S</kbd> để tránh mất dữ liệu khi mất điện hoặc máy treo.</div>
+        </div>
+
+        <h3>Các định dạng file phổ biến</h3>
+        <table class="styled-table">
+          <thead><tr><th>Định dạng</th><th>Phần mở rộng</th><th>Mô tả</th></tr></thead>
+          <tbody>
+            <tr><td>Word Document</td><td>.docx</td><td>Định dạng mặc định của Word 2007+</td></tr>
+            <tr><td>Word 97-2003</td><td>.doc</td><td>Tương thích phiên bản cũ</td></tr>
+            <tr><td>PDF</td><td>.pdf</td><td>File chỉ đọc, giữ nguyên định dạng</td></tr>
+            <tr><td>Rich Text</td><td>.rtf</td><td>Tương thích nhiều phần mềm</td></tr>
+            <tr><td>Plain Text</td><td>.txt</td><td>Văn bản thuần, không định dạng</td></tr>
+            <tr><td>Template</td><td>.dotx</td><td>Mẫu tài liệu Word</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 1.4 -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">⌨️</span> 1.4 Phím tắt cơ bản</h2>
+        <p>Nắm vững các phím tắt sẽ giúp bạn làm việc nhanh hơn rất nhiều:</p>
+
+        <h3>Di chuyển & Chọn văn bản</h3>
+        <div class="shortcut-grid">
+          <div class="shortcut-item"><span>Đầu dòng</span> <kbd>Home</kbd></div>
+          <div class="shortcut-item"><span>Cuối dòng</span> <kbd>End</kbd></div>
+          <div class="shortcut-item"><span>Đầu tài liệu</span> <kbd>Ctrl + Home</kbd></div>
+          <div class="shortcut-item"><span>Cuối tài liệu</span> <kbd>Ctrl + End</kbd></div>
+          <div class="shortcut-item"><span>Chọn tất cả</span> <kbd>Ctrl + A</kbd></div>
+          <div class="shortcut-item"><span>Chọn 1 từ</span> <kbd>Double-click</kbd></div>
+          <div class="shortcut-item"><span>Chọn 1 dòng</span> <kbd>Click lề trái</kbd></div>
+          <div class="shortcut-item"><span>Chọn 1 đoạn</span> <kbd>Triple-click</kbd></div>
+        </div>
+
+        <h3>Chỉnh sửa cơ bản</h3>
+        <div class="shortcut-grid">
+          <div class="shortcut-item"><span>Sao chép</span> <kbd>Ctrl + C</kbd></div>
+          <div class="shortcut-item"><span>Cắt</span> <kbd>Ctrl + X</kbd></div>
+          <div class="shortcut-item"><span>Dán</span> <kbd>Ctrl + V</kbd></div>
+          <div class="shortcut-item"><span>Hoàn tác</span> <kbd>Ctrl + Z</kbd></div>
+          <div class="shortcut-item"><span>Làm lại</span> <kbd>Ctrl + Y</kbd></div>
+          <div class="shortcut-item"><span>Xóa từ bên phải</span> <kbd>Ctrl + Del</kbd></div>
+          <div class="shortcut-item"><span>Xóa từ bên trái</span> <kbd>Ctrl + Backspace</kbd></div>
+          <div class="shortcut-item"><span>Dán đặc biệt</span> <kbd>Ctrl + Shift + V</kbd></div>
+        </div>
+      </section>
+
+      <!-- 1.5 Exercise -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎯</span> 1.5 Bài tập thực hành</h2>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài tập 1.1 – Tạo tài liệu đầu tiên</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p><strong>Yêu cầu:</strong></p>
+              <ol>
+                <li>Mở Microsoft Word, tạo một tài liệu mới (Blank document)</li>
+                <li>Gõ nội dung sau: <em>"Đây là tài liệu đầu tiên của tôi trong Microsoft Word. Tôi đang học cách sử dụng Word từ giáo trình online."</em></li>
+                <li>Lưu file với tên <strong>"BaiTap1_1.docx"</strong> vào Desktop</li>
+                <li>Đóng file, sau đó mở lại bằng phím tắt <kbd>Ctrl + O</kbd></li>
+                <li>Lưu lại file dưới định dạng PDF (File → Save As → PDF)</li>
+              </ol>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('ans1')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="ans1">
+              <h4>✅ Hướng dẫn chi tiết:</h4>
+              <div class="steps">
+                <div class="step"><div class="step-content"><p>Mở Word → Click <strong>Blank document</strong></p></div></div>
+                <div class="step"><div class="step-content"><p>Gõ nội dung bài vào vùng soạn thảo</p></div></div>
+                <div class="step"><div class="step-content"><p>Nhấn <kbd>Ctrl + S</kbd> → Chọn Desktop → Đặt tên <strong>BaiTap1_1</strong> → Save</p></div></div>
+                <div class="step"><div class="step-content"><p>Nhấn <kbd>Ctrl + W</kbd> để đóng file</p></div></div>
+                <div class="step"><div class="step-content"><p>Nhấn <kbd>Ctrl + O</kbd> → Duyệt đến Desktop → Chọn BaiTap1_1.docx → Open</p></div></div>
+                <div class="step"><div class="step-content"><p>Nhấn <kbd>F12</kbd> → Chọn "Save as type" = <strong>PDF</strong> → Save</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài tập 1.2 – Khám phá giao diện Ribbon</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p><strong>Yêu cầu:</strong></p>
+              <ol>
+                <li>Mở Word, lần lượt click vào từng Tab trên Ribbon (Home, Insert, Design, Layout, References, Mailings, Review, View)</li>
+                <li>Ghi chú lại 3 tính năng bạn thấy hữu ích nhất ở mỗi Tab</li>
+                <li>Thêm nút <strong>Print Preview</strong> vào Quick Access Toolbar</li>
+                <li>Ẩn Ribbon bằng <kbd>Ctrl + F1</kbd>, sau đó hiện lại</li>
+              </ol>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('ans2')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="ans2">
+              <h4>✅ Hướng dẫn thêm vào Quick Access Toolbar:</h4>
+              <div class="steps">
+                <div class="step"><div class="step-content"><p>Click mũi tên nhỏ ▼ bên phải Quick Access Toolbar</p></div></div>
+                <div class="step"><div class="step-content"><p>Chọn <strong>More Commands...</strong></p></div></div>
+                <div class="step"><div class="step-content"><p>Trong danh sách lệnh, tìm <strong>Print Preview and Print</strong></p></div></div>
+                <div class="step"><div class="step-content"><p>Nhấn <strong>Add >></strong> → OK</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation -->
+      
+      <!-- Notes Section -->
+      <section class="notes-section" id="notes-section" data-page="chuong1">
+        <h2 class="section-title"><span class="icon">📝</span> Ghi chú của bạn <span class="notes-count-badge"><span class="notes-count">0</span></span></h2>
+        <form class="notes-form">
+          <textarea class="notes-input" placeholder="Viết ghi chú tại đây..." rows="1"></textarea>
+          <button type="submit" class="notes-submit">💾 Lưu</button>
+        </form>
+        <div class="notes-list"></div>
+      </section>
+
+      <div class="chapter-nav-bottom">
+        <a href="index.html"><small>← Quay lại</small> Trang chủ</a>
+        <a href="chuong2.html"><small>Chương tiếp →</small> Định dạng văn bản</a>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('show');}
+    function toggleAnswer(id){document.getElementById(id).classList.toggle('show');}
+  </script>
+  <script src="notes.js"></script>
+</body>
+</html>

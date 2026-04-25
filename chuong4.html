@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 4: Bảng biểu (Tables)</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="page-wrapper">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header"><div class="logo">W</div><h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2></div>
+      <div class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">🏠</span> Trang chủ</a><div class="nav-divider"></div>
+        <a href="chuong1.html"><span class="nav-icon">📘</span> Chương 1<span class="nav-num">01</span></a>
+        <a href="chuong2.html"><span class="nav-icon">✏️</span> Chương 2<span class="nav-num">02</span></a>
+        <a href="chuong3.html"><span class="nav-icon">📐</span> Chương 3<span class="nav-num">03</span></a>
+        <a href="chuong4.html" class="active"><span class="nav-icon">📊</span> Chương 4<span class="nav-num">04</span></a>
+        <a href="chuong5.html"><span class="nav-icon">🖼️</span> Chương 5<span class="nav-num">05</span></a>
+        <a href="chuong6.html"><span class="nav-icon">📄</span> Chương 6<span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Chương 7<span class="nav-num">07</span></a>
+        <a href="chuong8.html"><span class="nav-icon">📨</span> Chương 8<span class="nav-num">08</span></a>
+        <a href="chuong9.html"><span class="nav-icon">⚡</span> Chương 9<span class="nav-num">09</span></a>
+        <a href="chuong10.html"><span class="nav-icon">📋</span> Chương 10<span class="nav-num">10</span></a>
+        <div class="nav-divider"></div><a href="bai-tap.html"><span class="nav-icon">🎯</span> Bài tập</a>
+      </div>
+    </nav>
+    <main class="main-content content">
+      <div class="chapter-header">
+        <div class="ch-num">Chương 04</div>
+        <h1>Bảng biểu (Tables)</h1>
+        <p>Tạo, chỉnh sửa, định dạng bảng. Merge/Split, Formulas, Table Styles, bảng lương và bảng điểm.</p>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">➕</span> 4.1 Tạo bảng</h2>
+        <div class="card">
+          <h3>Các cách tạo bảng</h3>
+          <ol>
+            <li><strong>Insert → Table → Kéo chọn</strong> số hàng × cột (tối đa 10×8)</li>
+            <li><strong>Insert → Table → Insert Table...</strong> → Nhập số cột, số hàng</li>
+            <li><strong>Insert → Table → Draw Table</strong> → Vẽ bảng bằng chuột</li>
+            <li><strong>Insert → Table → Excel Spreadsheet</strong> → Chèn bảng tính Excel</li>
+            <li><strong>Gõ nhanh:</strong> Gõ <code>+---+---+---+</code> rồi Enter → Tự tạo bảng 3 cột</li>
+          </ol>
+        </div>
+        <div class="info-box tip">
+          <span class="box-icon">💡</span>
+          <div>Di chuyển trong bảng: <kbd>Tab</kbd> = ô tiếp theo, <kbd>Shift+Tab</kbd> = ô trước. Nhấn <kbd>Tab</kbd> ở ô cuối cùng sẽ tạo hàng mới.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">✂️</span> 4.2 Chỉnh sửa bảng</h2>
+        <div class="card">
+          <h3>Thao tác cơ bản</h3>
+          <table class="styled-table">
+            <thead><tr><th>Thao tác</th><th>Cách thực hiện</th></tr></thead>
+            <tbody>
+              <tr><td>Chọn ô</td><td>Click vào cạnh trái ô (con trỏ →)</td></tr>
+              <tr><td>Chọn hàng</td><td>Click vào lề trái bảng</td></tr>
+              <tr><td>Chọn cột</td><td>Click cạnh trên cột (con trỏ ↓)</td></tr>
+              <tr><td>Chọn toàn bảng</td><td>Click ⊞ ở góc trên trái bảng</td></tr>
+              <tr><td>Thêm hàng</td><td>Layout → Insert Above/Below</td></tr>
+              <tr><td>Thêm cột</td><td>Layout → Insert Left/Right</td></tr>
+              <tr><td>Xóa hàng/cột</td><td>Layout → Delete → Rows/Columns</td></tr>
+              <tr><td>Merge Cells</td><td>Chọn các ô → Layout → Merge Cells</td></tr>
+              <tr><td>Split Cells</td><td>Chọn ô → Layout → Split Cells</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎨</span> 4.3 Định dạng bảng</h2>
+        <div class="card">
+          <h3>Table Styles</h3>
+          <p>Click vào bảng → Tab <strong>Design</strong> → Chọn mẫu từ <strong>Table Styles</strong> gallery. Có thể tùy chỉnh thêm:</p>
+          <ul>
+            <li><strong>Header Row</strong> – Tô đậm hàng tiêu đề</li>
+            <li><strong>Banded Rows</strong> – Xen kẽ màu nền giữa các hàng</li>
+            <li><strong>First Column</strong> – Tô đậm cột đầu tiên</li>
+            <li><strong>Borders</strong> – Tùy chỉnh đường viền</li>
+            <li><strong>Shading</strong> – Tô màu nền ô</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Auto Fit (Tự điều chỉnh kích thước)</h3>
+          <ul>
+            <li><strong>AutoFit Contents</strong> – Co bảng theo nội dung</li>
+            <li><strong>AutoFit Window</strong> – Bảng rộng bằng trang</li>
+            <li><strong>Fixed Column Width</strong> – Giữ nguyên chiều rộng cột</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🔢</span> 4.4 Công thức trong bảng</h2>
+        <p>Word hỗ trợ một số công thức tính toán đơn giản trong bảng:</p>
+        <div class="card">
+          <h3>Cách chèn công thức</h3>
+          <div class="steps">
+            <div class="step"><div class="step-content"><p>Click vào ô cần chứa kết quả</p></div></div>
+            <div class="step"><div class="step-content"><p>Tab Layout → <strong>Formula</strong></p></div></div>
+            <div class="step"><div class="step-content"><p>Nhập công thức, ví dụ: <code>=SUM(ABOVE)</code></p></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Các công thức thường dùng</h3>
+          <table class="styled-table">
+            <thead><tr><th>Công thức</th><th>Ý nghĩa</th></tr></thead>
+            <tbody>
+              <tr><td><code>=SUM(ABOVE)</code></td><td>Tổng các ô phía trên</td></tr>
+              <tr><td><code>=SUM(LEFT)</code></td><td>Tổng các ô bên trái</td></tr>
+              <tr><td><code>=AVERAGE(ABOVE)</code></td><td>Trung bình phía trên</td></tr>
+              <tr><td><code>=MAX(ABOVE)</code></td><td>Giá trị lớn nhất phía trên</td></tr>
+              <tr><td><code>=MIN(ABOVE)</code></td><td>Giá trị nhỏ nhất phía trên</td></tr>
+              <tr><td><code>=COUNT(ABOVE)</code></td><td>Đếm số ô phía trên</td></tr>
+              <tr><td><code>=B2*C2</code></td><td>Tham chiếu ô cụ thể (cột B, hàng 2)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info-box warning">
+          <span class="box-icon">⚠️</span>
+          <div>Công thức trong Word <strong>không tự cập nhật</strong> khi thay đổi dữ liệu. Nhấn <kbd>F9</kbd> để cập nhật hoặc click phải → Update Field.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📊</span> 4.5 Sắp xếp dữ liệu (Sort)</h2>
+        <p>Click vào bảng → Layout → <strong>Sort</strong>:</p>
+        <ul>
+          <li>Chọn cột cần sắp xếp (Sort by)</li>
+          <li>Kiểu: Text, Number, Date</li>
+          <li>Thứ tự: Ascending (tăng dần) hoặc Descending (giảm dần)</li>
+          <li>Check "My list has: Header row" nếu hàng đầu là tiêu đề</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎯</span> 4.6 Bài tập thực hành</h2>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 4.1 – Bảng chấm công (Dễ)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo bảng 5 cột × 8 hàng: STT | Họ tên | Ngày công | Ngày nghỉ | Ghi chú. Hàng tiêu đề: Bold, Center, nền xanh nhạt. Merge 2 ô cuối cột "Ghi chú". Áp dụng Table Style.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a1')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a1"><h4>✅ Đáp án:</h4><p>Insert → Table 5×8 → Gõ tiêu đề → Bôi đen hàng 1 → Bold, Center, Shading = Light Blue → Chọn 2 ô cuối cột Ghi chú → Merge Cells → Design → chọn Table Style.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 4.2 – Bảng điểm học sinh (TB)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo bảng điểm: STT | Họ tên | Toán | Văn | Anh | Trung bình. Nhập 5 học sinh. Dùng <code>=AVERAGE(LEFT)</code> để tính trung bình. Sort theo Trung bình giảm dần.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a2')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a2"><h4>✅ Đáp án:</h4><p>Tạo bảng 6 cột × 6 hàng → Nhập dữ liệu → Cột TB: Layout → Formula → <code>=AVERAGE(C2:E2)</code> hoặc <code>=AVERAGE(LEFT)</code> → Number format: 0.0 → Lặp lại cho 5 hàng → Sort by cột TB, Descending.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 4.3 – Bảng lương (Khó)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo bảng lương: STT | Họ tên | Lương cơ bản | Phụ cấp | Bảo hiểm (8%) | Thực lãnh. Nhập 5 nhân viên. Tính Bảo hiểm = Lương CB × 8%, Thực lãnh = LCB + Phụ cấp - BH. Hàng cuối: Merge cột 1-2, ghi "TỔNG CỘNG", tính SUM.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a3')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a3"><h4>✅ Đáp án:</h4><p>Tạo bảng 6 cột × 7 hàng → Nhập dữ liệu → Cột BH: <code>=C2*0.08</code> → Cột Thực lãnh: <code>=C2+D2-E2</code> → Hàng cuối: Merge A7:B7, gõ "TỔNG CỘNG" → Cột C7: <code>=SUM(ABOVE)</code>. Number format: #,##0.</p></div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Notes Section -->
+      <section class="notes-section" id="notes-section" data-page="chuong4">
+        <h2 class="section-title"><span class="icon">📝</span> Ghi chú của bạn <span class="notes-count-badge"><span class="notes-count">0</span></span></h2>
+        <form class="notes-form">
+          <textarea class="notes-input" placeholder="Viết ghi chú tại đây..." rows="1"></textarea>
+          <button type="submit" class="notes-submit">💾 Lưu</button>
+        </form>
+        <div class="notes-list"></div>
+      </section>
+
+      <div class="chapter-nav-bottom">
+        <a href="chuong3.html"><small>← Chương trước</small> Định dạng đoạn văn</a>
+        <a href="chuong5.html"><small>Chương tiếp →</small> Hình ảnh & Đồ họa</a>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('show');}
+    function toggleAnswer(id){document.getElementById(id).classList.toggle('show');}
+  </script>
+  <script src="notes.js"></script>
+</body>
+</html>

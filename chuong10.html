@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 10: Mẫu văn bản thực tế</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="page-wrapper">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header"><div class="logo">W</div><h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2></div>
+      <div class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">🏠</span> Trang chủ</a><div class="nav-divider"></div>
+        <a href="chuong1.html"><span class="nav-icon">📘</span> Ch.1<span class="nav-num">01</span></a>
+        <a href="chuong2.html"><span class="nav-icon">✏️</span> Ch.2<span class="nav-num">02</span></a>
+        <a href="chuong3.html"><span class="nav-icon">📐</span> Ch.3<span class="nav-num">03</span></a>
+        <a href="chuong4.html"><span class="nav-icon">📊</span> Ch.4<span class="nav-num">04</span></a>
+        <a href="chuong5.html"><span class="nav-icon">🖼️</span> Ch.5<span class="nav-num">05</span></a>
+        <a href="chuong6.html"><span class="nav-icon">📄</span> Ch.6<span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Ch.7<span class="nav-num">07</span></a>
+        <a href="chuong8.html"><span class="nav-icon">📨</span> Ch.8<span class="nav-num">08</span></a>
+        <a href="chuong9.html"><span class="nav-icon">⚡</span> Ch.9<span class="nav-num">09</span></a>
+        <a href="chuong10.html" class="active"><span class="nav-icon">📋</span> Ch.10<span class="nav-num">10</span></a>
+        <div class="nav-divider"></div><a href="bai-tap.html"><span class="nav-icon">🎯</span> Bài tập</a>
+      </div>
+    </nav>
+    <main class="main-content content">
+      <div class="chapter-header">
+        <div class="ch-num">Chương 10</div>
+        <h1>Mẫu văn bản thực tế</h1>
+        <p>CV xin việc, hợp đồng lao động, công văn, quyết định, thông báo, biên bản họp, giấy ủy quyền.</p>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📌</span> 10.1 Quy chuẩn văn bản hành chính VN</h2>
+        <div class="card">
+          <h3>Theo Nghị định 30/2020/NĐ-CP</h3>
+          <table class="styled-table">
+            <thead><tr><th>Thành phần</th><th>Quy chuẩn</th></tr></thead>
+            <tbody>
+              <tr><td>Khổ giấy</td><td>A4 (210mm × 297mm)</td></tr>
+              <tr><td>Font</td><td>Times New Roman</td></tr>
+              <tr><td>Cỡ chữ nội dung</td><td>13 - 14pt</td></tr>
+              <tr><td>Lề trên</td><td>20 - 25mm</td></tr>
+              <tr><td>Lề dưới</td><td>20 - 25mm</td></tr>
+              <tr><td>Lề trái</td><td>30 - 35mm</td></tr>
+              <tr><td>Lề phải</td><td>15 - 20mm</td></tr>
+              <tr><td>Dãn dòng</td><td>Exactly 22pt hoặc At least 24pt</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 10.2 CV -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">👤</span> 10.2 Đơn xin việc / CV</h2>
+        <div class="template-preview">
+          <div class="header-block">
+            <p class="bold" style="font-size:18px;">CURRICULUM VITAE</p>
+            <p class="bold" style="font-size:15px;">SƠ YẾU LÝ LỊCH</p>
+          </div>
+          <hr>
+          <p><strong>Họ và tên:</strong> NGUYỄN VĂN A</p>
+          <p><strong>Ngày sinh:</strong> 15/03/1995 &nbsp;&nbsp; <strong>Giới tính:</strong> Nam</p>
+          <p><strong>Địa chỉ:</strong> 123 Nguyễn Trãi, Quận 1, TP.HCM</p>
+          <p><strong>Điện thoại:</strong> 0901 234 567 &nbsp;&nbsp; <strong>Email:</strong> nguyenvana@email.com</p>
+          <hr>
+          <p class="bold">MỤC TIÊU NGHỀ NGHIỆP</p>
+          <p class="indent">Ứng tuyển vị trí Nhân viên kinh doanh tại Công ty ABC. Mong muốn phát triển kỹ năng bán hàng và đóng góp vào sự phát triển của công ty.</p>
+          <hr>
+          <p class="bold">HỌC VẤN</p>
+          <p>2013 - 2017: Đại học Kinh tế TP.HCM – Cử nhân Quản trị Kinh doanh (GPA: 3.2/4.0)</p>
+          <hr>
+          <p class="bold">KINH NGHIỆM LÀM VIỆC</p>
+          <p>06/2017 - Nay: Nhân viên kinh doanh – Công ty XYZ</p>
+          <p class="indent">- Quản lý danh sách 50+ khách hàng, đạt 120% KPI hàng tháng</p>
+          <p class="indent">- Phát triển kênh bán hàng online, tăng doanh thu 30%</p>
+          <hr>
+          <p class="bold">KỸ NĂNG</p>
+          <p>Microsoft Office (Word, Excel, PowerPoint) • Giao tiếp • Thuyết trình • Tiếng Anh (IELTS 6.5)</p>
+        </div>
+
+        <div class="info-box tip">
+          <span class="box-icon">💡</span>
+          <div><strong>Kỹ năng Word cần dùng:</strong> Bảng (ẩn viền), Tabs, Columns (2 cột cho Contact/Skills), Shapes (đường kẻ trang trí), Text Box.</div>
+        </div>
+      </section>
+
+      <!-- 10.3 Hợp đồng -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📝</span> 10.3 Hợp đồng lao động</h2>
+        <div class="template-preview">
+          <div class="header-block">
+            <p class="bold">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
+            <p class="bold underline">Độc lập – Tự do – Hạnh phúc</p>
+            <br>
+            <p class="bold" style="font-size:16px;">HỢP ĐỒNG LAO ĐỘNG</p>
+            <p><em>Số: ......./HĐLĐ</em></p>
+          </div>
+          <p>Hôm nay, ngày ..... tháng ..... năm 2024, tại .................................</p>
+          <p>Chúng tôi gồm:</p>
+          <p class="bold">BÊN A (Người sử dụng lao động):</p>
+          <p>Công ty: ............................................................. </p>
+          <p>Địa chỉ: ............................................................. </p>
+          <p>Đại diện: Ông/Bà ..................... Chức vụ: ................</p>
+          <br>
+          <p class="bold">BÊN B (Người lao động):</p>
+          <p>Họ tên: ............................................................... </p>
+          <p>Sinh ngày: ....../....../........  CCCD số: ...................</p>
+          <p>Địa chỉ: ............................................................. </p>
+          <br>
+          <p class="bold">Điều 1: Công việc và địa điểm làm việc</p>
+          <p class="indent">1.1. Vị trí: ........................................................</p>
+          <p class="indent">1.2. Địa điểm: ....................................................</p>
+          <br>
+          <p class="bold">Điều 2: Thời hạn hợp đồng</p>
+          <p class="indent">Loại hợp đồng: □ Không xác định thời hạn &nbsp; □ Xác định thời hạn: ..... tháng</p>
+          <p class="indent">Từ ngày: ....../....../........ đến ngày: ....../....../........</p>
+          <br>
+          <p class="bold">Điều 3: Tiền lương và phụ cấp</p>
+          <p class="indent">3.1. Lương cơ bản: .......................... đồng/tháng</p>
+          <p class="indent">3.2. Phụ cấp: .................................. đồng/tháng</p>
+          <p class="indent">3.3. Hình thức trả: Chuyển khoản, vào ngày ..... hàng tháng</p>
+          <br>
+          <div class="sign-block">
+            <div><p class="bold">BÊN A</p><p><em>(Ký, ghi rõ họ tên, đóng dấu)</em></p></div>
+            <div><p class="bold">BÊN B</p><p><em>(Ký, ghi rõ họ tên)</em></p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10.4 Công văn -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📜</span> 10.4 Công văn (Official Letter)</h2>
+        <div class="template-preview">
+          <table style="width:100%;border:none;">
+            <tr>
+              <td style="width:40%;text-align:center;border:none;vertical-align:top;">
+                <p class="bold" style="font-size:12px;">UBND TỈNH XYZ</p>
+                <p class="bold" style="font-size:13px;">SỞ GIÁO DỤC VÀ ĐÀO TẠO</p>
+                <hr style="width:30%;margin:4px auto;">
+                <p style="font-size:12px;">Số: 123/SGDĐT-VP</p>
+                <p style="font-size:12px;">V/v: Tổ chức hội nghị tổng kết</p>
+              </td>
+              <td style="width:60%;text-align:center;border:none;vertical-align:top;">
+                <p class="bold" style="font-size:12px;">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
+                <p class="bold underline" style="font-size:13px;">Độc lập – Tự do – Hạnh phúc</p>
+                <hr style="width:30%;margin:4px auto;">
+                <p style="font-size:12px;"><em>XYZ, ngày 15 tháng 01 năm 2024</em></p>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <p style="text-align:center;" class="bold">Kính gửi: Ban Giám hiệu các trường THPT trên địa bàn tỉnh</p>
+          <br>
+          <p class="indent">Thực hiện kế hoạch công tác năm 2024, Sở Giáo dục và Đào tạo tổ chức Hội nghị tổng kết năm học 2023-2024, cụ thể như sau:</p>
+          <p class="indent">1. Thời gian: 08h00, ngày 20/01/2024</p>
+          <p class="indent">2. Địa điểm: Hội trường Sở GD&ĐT tỉnh XYZ</p>
+          <p class="indent">3. Thành phần: Hiệu trưởng và 01 Phó Hiệu trưởng mỗi trường</p>
+          <p class="indent">Đề nghị các đơn vị cử đại diện tham dự đúng thành phần và thời gian./.</p>
+          <br>
+          <table style="width:100%;border:none;">
+            <tr>
+              <td style="width:50%;border:none;vertical-align:top;font-size:12px;">
+                <p><strong>Nơi nhận:</strong></p>
+                <p>- Như trên;</p>
+                <p>- Lưu: VT.</p>
+              </td>
+              <td style="width:50%;text-align:center;border:none;">
+                <p class="bold">GIÁM ĐỐC</p>
+                <p><em>(Đã ký)</em></p>
+                <br><br>
+                <p class="bold">Nguyễn Văn X</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- 10.5 Quyết định -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">⚖️</span> 10.5 Quyết định</h2>
+        <div class="template-preview">
+          <table style="width:100%;border:none;">
+            <tr>
+              <td style="width:40%;text-align:center;border:none;vertical-align:top;">
+                <p class="bold" style="font-size:12px;">CÔNG TY TNHH ABC</p>
+                <hr style="width:30%;margin:4px auto;">
+                <p style="font-size:12px;">Số: 01/2024/QĐ-GĐ</p>
+              </td>
+              <td style="width:60%;text-align:center;border:none;vertical-align:top;">
+                <p class="bold" style="font-size:12px;">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
+                <p class="bold underline" style="font-size:13px;">Độc lập – Tự do – Hạnh phúc</p>
+                <hr style="width:30%;margin:4px auto;">
+                <p style="font-size:12px;"><em>TP.HCM, ngày 01 tháng 02 năm 2024</em></p>
+              </td>
+            </tr>
+          </table>
+          <div class="header-block">
+            <p class="bold" style="font-size:15px;">QUYẾT ĐỊNH</p>
+            <p class="bold"><em>Về việc bổ nhiệm cán bộ</em></p>
+          </div>
+          <p style="text-align:center;" class="bold">GIÁM ĐỐC CÔNG TY TNHH ABC</p>
+          <p class="indent"><em>Căn cứ Giấy chứng nhận đăng ký doanh nghiệp số ........;</em></p>
+          <p class="indent"><em>Căn cứ Điều lệ Công ty TNHH ABC;</em></p>
+          <p class="indent"><em>Xét đề nghị của Trưởng phòng Nhân sự,</em></p>
+          <p style="text-align:center;" class="bold">QUYẾT ĐỊNH:</p>
+          <p class="indent"><strong>Điều 1.</strong> Bổ nhiệm Ông/Bà .................. giữ chức vụ Trưởng phòng Kinh doanh kể từ ngày ....../....../2024.</p>
+          <p class="indent"><strong>Điều 2.</strong> Ông/Bà .................. được hưởng lương và phụ cấp chức vụ theo quy định của Công ty.</p>
+          <p class="indent"><strong>Điều 3.</strong> Quyết định có hiệu lực kể từ ngày ký. Phòng Nhân sự, Phòng Kế toán và Ông/Bà .................. chịu trách nhiệm thi hành./.</p>
+          <br>
+          <div class="sign-block">
+            <div style="font-size:12px;"><p><strong>Nơi nhận:</strong></p><p>- Như Điều 3;</p><p>- Lưu: VT, NS.</p></div>
+            <div><p class="bold">GIÁM ĐỐC</p><br><br><p class="bold">Nguyễn Văn Y</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10.6 Biên bản họp -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📋</span> 10.6 Biên bản họp & Giấy ủy quyền</h2>
+        <div class="card">
+          <h3>Biên bản họp – Các phần chính</h3>
+          <ul>
+            <li>Quốc hiệu, tiêu ngữ • Tên đơn vị</li>
+            <li>Tiêu đề: "BIÊN BẢN HỌP" + nội dung</li>
+            <li>Thời gian, địa điểm</li>
+            <li>Thành phần tham dự (Chủ tọa, Thư ký, danh sách)</li>
+            <li>Nội dung cuộc họp</li>
+            <li>Kết luận, biểu quyết</li>
+            <li>Chữ ký: Chủ tọa + Thư ký</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Giấy ủy quyền – Các phần chính</h3>
+          <ul>
+            <li>Quốc hiệu, tiêu ngữ</li>
+            <li>Tiêu đề: "GIẤY ỦY QUYỀN"</li>
+            <li>Bên ủy quyền: Họ tên, CCCD, chức vụ</li>
+            <li>Bên được ủy quyền: Họ tên, CCCD</li>
+            <li>Nội dung ủy quyền (làm gì, phạm vi, thời hạn)</li>
+            <li>Chữ ký hai bên + Xác nhận cơ quan</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎯</span> 10.7 Bài tập thực hành</h2>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 10.1 – Soạn công văn (TB)</div>
+          <div class="exercise-body">
+            <div class="requirement"><p>Soạn 1 công văn đúng thể thức theo mẫu 10.4: có quốc hiệu, số/ký hiệu, trích yếu, nội dung, nơi nhận, chữ ký. Đúng font TNR 13pt, lề chuẩn VN.</p></div>
+            <button class="answer-toggle" onclick="toggleAnswer('a1')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a1"><h4>✅ Đáp án:</h4><p>Sử dụng bảng 2 cột (ẩn viền) cho header. Quốc hiệu: Bold, Center. Nội dung: Justify, First Line Indent. Nơi nhận + Chữ ký: bảng 2 cột ẩn viền. Font TNR 13pt, Margins theo NĐ30.</p></div>
+          </div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 10.2 – Hợp đồng lao động (Khó)</div>
+          <div class="exercise-body">
+            <div class="requirement"><p>Soạn hợp đồng lao động hoàn chỉnh theo mẫu 10.3 với ít nhất 5 điều khoản. Sử dụng Multilevel Numbering cho điều/khoản. Tạo checkbox (☐) cho các tùy chọn.</p></div>
+            <button class="answer-toggle" onclick="toggleAnswer('a2')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a2"><h4>✅ Đáp án:</h4><p>Header: bảng ẩn viền. Multilevel List: Điều 1 → 1.1, 1.2. Checkbox: Insert → Symbol → ☐ hoặc Developer → Check Box. Chữ ký: bảng 2 cột ẩn viền, Center. Áp dụng Page Border nếu cần.</p></div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Notes Section -->
+      <section class="notes-section" id="notes-section" data-page="chuong10">
+        <h2 class="section-title"><span class="icon">📝</span> Ghi chú của bạn <span class="notes-count-badge"><span class="notes-count">0</span></span></h2>
+        <form class="notes-form">
+          <textarea class="notes-input" placeholder="Viết ghi chú tại đây..." rows="1"></textarea>
+          <button type="submit" class="notes-submit">💾 Lưu</button>
+        </form>
+        <div class="notes-list"></div>
+      </section>
+
+      <div class="chapter-nav-bottom">
+        <a href="chuong9.html"><small>← Chương trước</small> Thủ thuật nâng cao</a>
+        <a href="bai-tap.html"><small>Tiếp theo →</small> Bài tập tổng hợp</a>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('show');}
+    function toggleAnswer(id){document.getElementById(id).classList.toggle('show');}
+  </script>
+  <script src="notes.js"></script>
+</body>
+</html>

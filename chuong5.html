@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 5: Hình ảnh & Đồ họa</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="page-wrapper">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header"><div class="logo">W</div><h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2></div>
+      <div class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">🏠</span> Trang chủ</a><div class="nav-divider"></div>
+        <a href="chuong1.html"><span class="nav-icon">📘</span> Ch.1<span class="nav-num">01</span></a>
+        <a href="chuong2.html"><span class="nav-icon">✏️</span> Ch.2<span class="nav-num">02</span></a>
+        <a href="chuong3.html"><span class="nav-icon">📐</span> Ch.3<span class="nav-num">03</span></a>
+        <a href="chuong4.html"><span class="nav-icon">📊</span> Ch.4<span class="nav-num">04</span></a>
+        <a href="chuong5.html" class="active"><span class="nav-icon">🖼️</span> Ch.5<span class="nav-num">05</span></a>
+        <a href="chuong6.html"><span class="nav-icon">📄</span> Ch.6<span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Ch.7<span class="nav-num">07</span></a>
+        <a href="chuong8.html"><span class="nav-icon">📨</span> Ch.8<span class="nav-num">08</span></a>
+        <a href="chuong9.html"><span class="nav-icon">⚡</span> Ch.9<span class="nav-num">09</span></a>
+        <a href="chuong10.html"><span class="nav-icon">📋</span> Ch.10<span class="nav-num">10</span></a>
+        <div class="nav-divider"></div><a href="bai-tap.html"><span class="nav-icon">🎯</span> Bài tập</a>
+      </div>
+    </nav>
+    <main class="main-content content">
+      <div class="chapter-header">
+        <div class="ch-num">Chương 05</div>
+        <h1>Hình ảnh & Đồ họa</h1>
+        <p>Pictures, Shapes, SmartArt, WordArt, Text Box và Text Wrapping.</p>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📷</span> 5.1 Chèn hình ảnh (Pictures)</h2>
+        <div class="card">
+          <h3>Các cách chèn hình</h3>
+          <ol>
+            <li><strong>Insert → Pictures → This Device</strong> – Chèn từ máy tính</li>
+            <li><strong>Insert → Pictures → Online Pictures</strong> – Tìm ảnh trên mạng</li>
+            <li><strong>Insert → Pictures → Stock Images</strong> – Ảnh miễn phí (Word 365)</li>
+            <li><strong>Kéo thả</strong> – Kéo file ảnh từ thư mục vào tài liệu</li>
+            <li><strong>Copy/Paste</strong> – <kbd>Ctrl+C</kbd> ảnh từ nơi khác, <kbd>Ctrl+V</kbd> vào Word</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>Chỉnh sửa hình ảnh (Picture Format)</h3>
+          <ul>
+            <li><strong>Crop</strong> – Cắt xén hình ảnh</li>
+            <li><strong>Resize</strong> – Kéo handle góc (giữ Shift để giữ tỷ lệ)</li>
+            <li><strong>Corrections</strong> – Điều chỉnh độ sáng, contrast</li>
+            <li><strong>Color</strong> – Đổi tông màu, saturation</li>
+            <li><strong>Artistic Effects</strong> – Hiệu ứng nghệ thuật</li>
+            <li><strong>Remove Background</strong> – Xóa nền ảnh</li>
+            <li><strong>Picture Styles</strong> – Khung ảnh, shadow, reflection</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🔷</span> 5.2 Shapes (Hình vẽ)</h2>
+        <p><strong>Insert → Shapes</strong> cung cấp các hình cơ bản: đường thẳng, mũi tên, hình chữ nhật, hình tròn, callout, flowchart...</p>
+        <div class="card">
+          <h3>Mẹo vẽ Shapes</h3>
+          <ul>
+            <li>Giữ <kbd>Shift</kbd> khi vẽ: hình vuông, tròn đều, đường thẳng</li>
+            <li>Giữ <kbd>Ctrl</kbd> khi vẽ: vẽ từ tâm ra</li>
+            <li><strong>Add Text</strong>: Click phải → Add Text để thêm chữ vào shape</li>
+            <li><strong>Group</strong>: Chọn nhiều shapes (<kbd>Ctrl+Click</kbd>) → Format → Group</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🧩</span> 5.3 SmartArt & WordArt</h2>
+        <div class="card">
+          <h3>SmartArt (Insert → SmartArt)</h3>
+          <p>Tạo sơ đồ chuyên nghiệp nhanh chóng:</p>
+          <ul>
+            <li><strong>List</strong> – Danh sách trực quan</li>
+            <li><strong>Process</strong> – Quy trình, các bước</li>
+            <li><strong>Cycle</strong> – Vòng tuần hoàn</li>
+            <li><strong>Hierarchy</strong> – Sơ đồ tổ chức</li>
+            <li><strong>Relationship</strong> – Sơ đồ quan hệ, Venn</li>
+            <li><strong>Pyramid</strong> – Hình tháp</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>WordArt (Insert → WordArt)</h3>
+          <p>Chữ nghệ thuật với hiệu ứng 3D, gradient, shadow. Thích hợp cho: tiêu đề poster, bìa báo cáo, banner.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">📦</span> 5.4 Text Wrapping (Bao văn bản)</h2>
+        <p>Xác định cách văn bản bao quanh hình ảnh/shape:</p>
+        <div class="card">
+          <table class="styled-table">
+            <thead><tr><th>Kiểu</th><th>Mô tả</th></tr></thead>
+            <tbody>
+              <tr><td><strong>In Line with Text</strong></td><td>Ảnh như 1 ký tự trong dòng (mặc định)</td></tr>
+              <tr><td><strong>Square</strong></td><td>Text bao quanh hình chữ nhật</td></tr>
+              <tr><td><strong>Tight</strong></td><td>Text bao sát viền hình</td></tr>
+              <tr><td><strong>Through</strong></td><td>Text chui qua vùng trống trong hình</td></tr>
+              <tr><td><strong>Top and Bottom</strong></td><td>Text chỉ ở trên và dưới</td></tr>
+              <tr><td><strong>Behind Text</strong></td><td>Hình nằm dưới text (làm nền)</td></tr>
+              <tr><td><strong>In Front of Text</strong></td><td>Hình nằm trên text (che text)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info-box tip">
+          <span class="box-icon">💡</span>
+          <div>Click ảnh → biểu tượng Layout Options ⊞ xuất hiện bên phải → chọn nhanh kiểu wrapping.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🎯</span> 5.5 Bài tập thực hành</h2>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 5.1 – Chèn & định dạng ảnh (Dễ)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Chèn 1 ảnh bất kỳ. Resize 8×6cm. Crop hình tròn. Wrap: Square. Thêm Picture Style (shadow). Đặt ảnh ở giữa trang.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a1')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a1"><h4>✅ Đáp án:</h4><p>Insert → Pictures → chọn ảnh → Format → Size: 8×6cm → Crop → Crop to Shape → Oval → Wrap Text → Square → Picture Styles → chọn mẫu có shadow → Kéo ảnh ra giữa trang.</p></div>
+          </div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 5.2 – Sơ đồ tổ chức SmartArt (TB)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo sơ đồ tổ chức công ty: Giám đốc → 3 Phó GĐ → Mỗi PGĐ quản lý 2 phòng ban. Áp dụng SmartArt Style đẹp, đổi màu.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a2')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a2"><h4>✅ Đáp án:</h4><p>Insert → SmartArt → Hierarchy → Organization Chart → Nhập "Giám đốc" → Add Shape Below ×3 cho PGĐ → Mỗi PGĐ: Add Shape Below ×2 → Design → Change Colors, SmartArt Styles.</p></div>
+          </div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> BT 5.3 – Thiết kế poster (Khó)</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Thiết kế poster A4 quảng cáo sự kiện: WordArt cho tiêu đề, ảnh minh họa, shapes trang trí, text box cho thông tin chi tiết, SmartArt cho lịch trình. Wrap Text phù hợp cho từng đối tượng.</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a3')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a3"><h4>✅ Đáp án:</h4><p>WordArt cho tên sự kiện → Insert Picture + Square wrap → Shapes (hình chữ nhật) làm nền cho text box → Text Box cho địa điểm, thời gian → SmartArt Process cho lịch trình → Group tất cả → Căn chỉnh.</p></div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Notes Section -->
+      <section class="notes-section" id="notes-section" data-page="chuong5">
+        <h2 class="section-title"><span class="icon">📝</span> Ghi chú của bạn <span class="notes-count-badge"><span class="notes-count">0</span></span></h2>
+        <form class="notes-form">
+          <textarea class="notes-input" placeholder="Viết ghi chú tại đây..." rows="1"></textarea>
+          <button type="submit" class="notes-submit">💾 Lưu</button>
+        </form>
+        <div class="notes-list"></div>
+      </section>
+
+      <div class="chapter-nav-bottom">
+        <a href="chuong4.html"><small>← Chương trước</small> Bảng biểu</a>
+        <a href="chuong6.html"><small>Chương tiếp →</small> Định dạng trang</a>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('show');}
+    function toggleAnswer(id){document.getElementById(id).classList.toggle('show');}
+  </script>
+  <script src="notes.js"></script>
+</body>
+</html>

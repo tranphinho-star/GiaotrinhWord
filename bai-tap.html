@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập Thực hành Tổng hợp - Giáo trình Microsoft Word</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="auth.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="page-wrapper">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header"><div class="logo">W</div><h2>Giáo Trình Word<small>Từ cơ bản đến nâng cao</small></h2></div>
+      <div class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">🏠</span> Trang chủ</a><div class="nav-divider"></div>
+        <a href="chuong1.html"><span class="nav-icon">📘</span> Ch.1<span class="nav-num">01</span></a>
+        <a href="chuong2.html"><span class="nav-icon">✏️</span> Ch.2<span class="nav-num">02</span></a>
+        <a href="chuong3.html"><span class="nav-icon">📐</span> Ch.3<span class="nav-num">03</span></a>
+        <a href="chuong4.html"><span class="nav-icon">📊</span> Ch.4<span class="nav-num">04</span></a>
+        <a href="chuong5.html"><span class="nav-icon">🖼️</span> Ch.5<span class="nav-num">05</span></a>
+        <a href="chuong6.html"><span class="nav-icon">📄</span> Ch.6<span class="nav-num">06</span></a>
+        <a href="chuong7.html"><span class="nav-icon">📑</span> Ch.7<span class="nav-num">07</span></a>
+        <a href="chuong8.html"><span class="nav-icon">📨</span> Ch.8<span class="nav-num">08</span></a>
+        <a href="chuong9.html"><span class="nav-icon">⚡</span> Ch.9<span class="nav-num">09</span></a>
+        <a href="chuong10.html"><span class="nav-icon">📋</span> Ch.10<span class="nav-num">10</span></a>
+        <div class="nav-divider"></div>
+        <a href="bai-tap.html" class="active"><span class="nav-icon">🎯</span> Bài tập</a>
+      </div>
+    </nav>
+    <main class="main-content content">
+      <div class="chapter-header">
+        <div class="ch-num">Thực hành</div>
+        <h1>Bài tập Tổng hợp</h1>
+        <p>15 bài tập từ cơ bản đến nâng cao, tổng hợp kiến thức từ tất cả các chương. Mỗi bài có đáp án chi tiết.</p>
+      </div>
+
+      <!-- BT 1 -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🟢</span> Cơ bản (Bài 1-5)</h2>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 1 – Soạn thảo đơn giản</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Soạn 1 trang A4 giới thiệu bản thân: Họ tên (Bold, 16pt, Center), thông tin cá nhân, sở thích (Bullets), mục tiêu nghề nghiệp. Font TNR 13pt, Justify, Line spacing 1.5.</p>
+              <p><strong>Kỹ năng:</strong> Ch.1 + Ch.2 + Ch.3</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a1')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a1"><h4>✅ Đáp án:</h4><p>Gõ tên → <kbd>Ctrl+E</kbd>, <kbd>Ctrl+B</kbd>, 16pt → Enter → <kbd>Ctrl+J</kbd>, 13pt → Gõ thông tin → Bullets cho sở thích → Paragraph: Line spacing 1.5. Lưu file.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 2 – Bảng thời khóa biểu</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo bảng thời khóa biểu 7 cột (Thứ 2 → CN) × 6 hàng (tiết 1-5 + header). Merge ô cho các môn 2 tiết. Table Style đẹp. Tiêu đề Bold, Center. Ô trống tô nền xám nhạt.</p>
+              <p><strong>Kỹ năng:</strong> Ch.4</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a2')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a2"><h4>✅ Đáp án:</h4><p>Insert Table 7×6 → Header: "Tiết\Thứ", "Thứ 2"..."CN" → Merge 2 ô cho môn 2 tiết → Design → Table Style → Chọn ô trống → Shading: Light Gray → Lưu.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 3 – Thư cảm ơn</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Soạn thư cảm ơn A4: Logo công ty (ảnh/shape), ngày tháng (căn phải), kính gửi, nội dung 2 đoạn (Justify, First Line), ký tên (căn phải). Page Border art.</p>
+              <p><strong>Kỹ năng:</strong> Ch.2 + Ch.3 + Ch.5 + Ch.6</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a3')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a3"><h4>✅ Đáp án:</h4><p>Insert Picture/Shape cho logo → Wrap: Behind Text → Ngày: <kbd>Ctrl+R</kbd> → Nội dung: Justify, First Line 1.27cm → Ký tên: <kbd>Ctrl+R</kbd> → Design → Page Borders → Art.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 4 – Danh sách liên hệ</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo bảng danh bạ: STT, Họ tên, Điện thoại, Email, Phòng ban. 10 nhân viên. Sort theo tên A-Z. Header lặp lại ở mỗi trang (Table Properties → Row → Repeat header).</p>
+              <p><strong>Kỹ năng:</strong> Ch.4</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a4')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a4"><h4>✅ Đáp án:</h4><p>Tạo bảng 5 cột × 11 hàng → Nhập dữ liệu → Layout → Sort → Sort by Họ tên, Ascending → Chọn hàng header → Table Properties → Row → ☑ Repeat as header row.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 5 – Tờ rơi đơn giản</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo tờ rơi (flyer) A4: Landscape, 3 cột. WordArt tiêu đề. 1 ảnh minh họa mỗi cột. Text Box cho thông tin liên hệ. Đường kẻ giữa các cột.</p>
+              <p><strong>Kỹ năng:</strong> Ch.5 + Ch.6</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a5')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a5"><h4>✅ Đáp án:</h4><p>Layout → Orientation: Landscape → Columns: 3 + Line between → Insert WordArt → Insert Pictures (Square wrap) mỗi cột → Insert Text Box cho contact → Căn chỉnh.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BT 6-10 -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🟡</span> Trung bình (Bài 6-10)</h2>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 6 – Bảng lương nhân viên</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo bảng lương 10 NV: STT, Họ tên, Lương CB, Phụ cấp, BHXH (8%), Thuế TNCN (10% nếu lương>15tr, 5% nếu ≤15tr), Thực lãnh. Dùng Formula tính. Hàng tổng cộng. Merge header "Các khoản trừ" cho cột BHXH+Thuế. Định dạng số: #,##0.</p>
+              <p><strong>Kỹ năng:</strong> Ch.4 nâng cao</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a6')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a6"><h4>✅ Đáp án:</h4><p>Tạo bảng → Merge header "Các khoản trừ" → Nhập dữ liệu → BHXH: <code>=C2*0.08</code> → Thuế: tính tay hoặc dùng IF → Thực lãnh: <code>=C2+D2-E2-F2</code> → SUM(ABOVE) cho tổng → Format: #,##0.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 7 – Báo cáo với TOC</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo báo cáo 5+ trang: Bìa, Mục lục tự động, 3 chương (Heading 1-3), kết luận. Header: tên báo cáo. Footer: số trang (trang bìa không đánh số). Footnotes cho thuật ngữ. Ít nhất 1 bảng + 1 hình.</p>
+              <p><strong>Kỹ năng:</strong> Ch.6 + Ch.7</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a7')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a7"><h4>✅ Đáp án:</h4><p>Trang bìa → Section Break (Next Page) → Áp dụng Heading 1/2/3 → References → TOC → Insert → Header (Different First Page) → Footer: Page Number (Start at 0) → Ctrl+Alt+F cho Footnotes → Insert Table + Picture.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 8 – Thư mời Mail Merge</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo Excel: 15 khách mời (HoTen, GioiTinh, ChucVu, DiaChi). Soạn thư mời tiệc cuối năm. Mail Merge với IF rule: GioiTinh="Nam"→"Ông", else "Bà". Preview tất cả bản ghi. Finish & Merge → Print.</p>
+              <p><strong>Kỹ năng:</strong> Ch.8</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a8')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a8"><h4>✅ Đáp án:</h4><p>Excel: tạo bảng 15 hàng → Word: Mailings → Letters → Select Recipients → Insert Merge Fields → Rules → IF GioiTinh="Nam" THEN "Ông" ELSE "Bà" → Preview → Finish & Merge.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 9 – Sơ đồ quy trình</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo sơ đồ quy trình xử lý đơn hàng (7+ bước) dùng Shapes: hình chữ nhật (bước), hình thoi (quyết định), mũi tên. Group tất cả. Phiên bản 2: dùng SmartArt Process. So sánh 2 cách.</p>
+              <p><strong>Kỹ năng:</strong> Ch.5</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a9')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a9"><h4>✅ Đáp án:</h4><p>Insert → Shapes: Rectangle cho mỗi bước, Diamond cho quyết định, Arrow connectors → Add Text → Format → Align → Group. SmartArt: Insert → SmartArt → Process → Basic Chevron → Nhập text.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 10 – Bản tin nội bộ</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo newsletter 2 trang: Banner (WordArt + Shape), nội dung 2 cột có đường kẻ, ảnh minh họa (Tight wrap), Text Box quote, bảng thống kê, Watermark "NỘI BỘ". Header: logo + tên bản tin. Footer: số trang + ngày.</p>
+              <p><strong>Kỹ năng:</strong> Ch.2-7 tổng hợp</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a10')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a10"><h4>✅ Đáp án:</h4><p>Header: logo + tên bản tin → WordArt banner → Continuous Break → Columns 2 + Line between → Insert Pictures (Tight) → Text Box quote → Insert Table → Design → Watermark → Custom "NỘI BỘ" → Footer: Page Number + Auto Date.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BT 11-15 -->
+      <section class="section">
+        <h2 class="section-title"><span class="icon">🔴</span> Nâng cao (Bài 11-15)</h2>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 11 – Hợp đồng mua bán hoàn chỉnh</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Soạn Hợp đồng mua bán hàng hóa 3+ trang: Quốc hiệu, thông tin 2 bên (bảng ẩn viền), 10 điều khoản (Multilevel), bảng danh mục hàng hóa (có formula tính thành tiền, VAT, tổng cộng). Chữ ký 2 bên. Protect: chỉ cho phép fill in forms.</p>
+              <p><strong>Kỹ năng:</strong> Ch.3 + Ch.4 + Ch.9 + Ch.10</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a11')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a11"><h4>✅ Đáp án:</h4><p>Bảng ẩn viền cho header → Multilevel List cho điều khoản → Table cho hàng hóa: Thành tiền = SL × ĐG, VAT = Thành tiền × 10%, Tổng = SUM → Bảng ẩn viền cho chữ ký → Review → Restrict Editing → Filling in forms.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 12 – Luận văn mẫu</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo luận văn mẫu 10+ trang: Bìa ngoài (Page Border), bìa trong, trang lời cam đoan, mục lục, danh mục bảng biểu, 3 chương, tài liệu tham khảo, phụ lục. Đánh số trang: i-iv (phần đầu), 1-n (nội dung). Header khác nhau giữa các chương. Styles nhất quán.</p>
+              <p><strong>Kỹ năng:</strong> Ch.6 + Ch.7 + Ch.9 tổng hợp</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a12')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a12"><h4>✅ Đáp án:</h4><p>Section Break giữa: Bìa | Phần đầu | Nội dung. Phần đầu: Page Number format i,ii. Nội dung: format 1,2,3, Start at 1. Modify Heading styles → TOC → Table of Figures. Header: Unlink, nhập tên chương riêng cho mỗi section.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 13 – Nhãn & Phong bì Mail Merge</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo Excel 30 người. Mail Merge Labels (Avery A4 21 nhãn/trang) + Mail Merge Envelopes. Nhãn gồm: Tên, Chức vụ, Công ty, Địa chỉ. Phong bì có logo người gửi.</p>
+              <p><strong>Kỹ năng:</strong> Ch.8 nâng cao</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a13')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a13"><h4>✅ Đáp án:</h4><p>Labels: Mailings → Labels → Avery → Insert Merge Fields → Update Labels → Finish. Envelopes: Mailings → Envelopes → Return address + logo → Delivery: Merge Fields → Finish & Merge.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 14 – Bộ văn bản nhà nước</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Soạn trọn bộ 5 loại văn bản hành chính đúng thể thức NĐ30: Công văn, Quyết định, Thông báo, Biên bản họp, Tờ trình. Tạo Macro "VanBanMau" tự động thiết lập: TNR 13pt, Justify, Margins chuẩn. Tạo Style "TieuDe_VB" cho tiêu đề văn bản.</p>
+              <p><strong>Kỹ năng:</strong> Ch.9 + Ch.10 tổng hợp</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a14')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a14"><h4>✅ Đáp án:</h4><p>Tạo Macro: Record → Ctrl+A → TNR 13pt, Justify, Margins → Stop. Tạo Style: New Style → TieuDe_VB: TNR 14pt, Bold, Center, All Caps. Soạn 5 văn bản theo mẫu Ch.10, áp dụng Macro + Style.</p></div>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-header"><span class="ex-icon">📝</span> Bài 15 – Dự án tổng hợp: Hồ sơ công ty</div>
+          <div class="exercise-body">
+            <div class="requirement">
+              <p>Tạo <strong>Company Profile</strong> chuyên nghiệp 15+ trang: Bìa đẹp (WordArt, Shapes, ảnh), mục lục tự động, giới thiệu công ty (SmartArt timeline), sơ đồ tổ chức (SmartArt Hierarchy), bảng sản phẩm/dịch vụ, thành tựu (bảng + biểu đồ), thông tin liên hệ. Styles nhất quán, Header/Footer chuyên nghiệp, Watermark logo, Track changes cho bản review.</p>
+              <p><strong>Kỹ năng:</strong> Tất cả Ch.1-10</p>
+            </div>
+            <button class="answer-toggle" onclick="toggleAnswer('a15')">👁️ Xem đáp án</button>
+            <div class="answer-content" id="a15"><h4>✅ Đáp án:</h4><p>Áp dụng tổng hợp tất cả kỹ năng: Section Breaks, Heading Styles → TOC, SmartArt cho timeline + org chart, Tables cho sản phẩm, Insert Chart cho thành tựu, Page Border cho bìa, Watermark cho logo, Header/Footer nhất quán, Track Changes cho review. Đây là bài tập cuối cùng kiểm tra toàn bộ kiến thức!</p></div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Notes Section -->
+      <section class="notes-section" id="notes-section" data-page="bai-tap">
+        <h2 class="section-title"><span class="icon">📝</span> Ghi chú của bạn <span class="notes-count-badge"><span class="notes-count">0</span></span></h2>
+        <form class="notes-form">
+          <textarea class="notes-input" placeholder="Viết ghi chú tại đây..." rows="1"></textarea>
+          <button type="submit" class="notes-submit">💾 Lưu</button>
+        </form>
+        <div class="notes-list"></div>
+      </section>
+
+      <div class="chapter-nav-bottom">
+        <a href="chuong10.html"><small>← Chương trước</small> Mẫu văn bản</a>
+        <a href="index.html"><small>Quay lại →</small> Trang chủ</a>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('overlay').classList.toggle('show');}
+    function toggleAnswer(id){document.getElementById(id).classList.toggle('show');}
+  </script>
+  <script src="notes.js"></script>
+</body>
+</html>
